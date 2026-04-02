@@ -160,7 +160,7 @@ export default function HomePage() {
               <CTAButton href="/contact" size="lg" variant="primary">
                 Demander un accompagnement
               </CTAButton>
-              <CTAButton href="/mon-offre" size="lg" variant="ghost">
+              <CTAButton href="/mon-offre" size="lg" variant="ghost" className="!text-white !border-white hover:!bg-white hover:!text-[#1A1A1A]">
                 Découvrir l&rsquo;offre
               </CTAButton>
             </div>
