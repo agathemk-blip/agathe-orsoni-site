@@ -151,11 +151,9 @@ export default function HomePage() {
             >
               J&rsquo;accompagne dirigeants et équipes dans la construction de
               stratégies digitales et e-commerce concrètes, avec une lecture
-              business et une approche opérationnelle.{" "}
-              <strong style={{ color: "#FFFFFF", fontWeight: 500 }}>
-                15 ans d&rsquo;expérience en retail et digital
-              </strong>
-              , de Petit Bateau à Kusmi Tea en passant par Contentsquare.
+              business et une approche opérationnelle. 15 ans
+              d&rsquo;expérience en retail et digital, de Petit Bateau à Kusmi
+              Tea en passant par Contentsquare.
             </p>
 
             <div className="flex flex-col sm:flex-row items-start gap-4 animate-fade-up animate-delay-300">

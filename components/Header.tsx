@@ -38,6 +38,8 @@ export default function Header() {
     };
   }, [isOpen]);
 
+  const darkHero = pathname === "/" && !scrolled;
+
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -51,7 +53,7 @@ export default function Header() {
           {/* Logo */}
           <Link
             href="/"
-            className="font-[var(--font-playfair)] text-[#1A1A1A] text-lg font-semibold tracking-tight hover:text-[#9B7D5E] transition-colors"
+            className={`font-[var(--font-playfair)] text-lg font-semibold tracking-tight hover:text-[#9B7D5E] transition-colors ${darkHero ? "text-white" : "text-[#1A1A1A]"}`}
             style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
           >
             Agathe Orsoni
@@ -66,10 +68,10 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`text-sm tracking-wide transition-colors hover:text-[#9B7D5E] ${
+                className={`text-sm tracking-wide transition-colors hover:text-[#C4A882] ${
                   pathname === link.href
-                    ? "text-[#9B7D5E] font-medium"
-                    : "text-[#1A1A1A]"
+                    ? "text-[#C4A882] font-medium"
+                    : darkHero ? "text-white" : "text-[#1A1A1A]"
                 }`}
               >
                 {link.label}
@@ -77,7 +79,11 @@ export default function Header() {
             ))}
             <Link
               href="/contact"
-              className="ml-2 inline-flex items-center px-5 py-2.5 bg-[#1A1A1A] text-white text-sm font-medium rounded-full hover:bg-[#9B7D5E] transition-colors duration-200"
+              className={`ml-2 inline-flex items-center px-5 py-2.5 text-sm font-medium rounded-full transition-colors duration-200 ${
+                darkHero
+                  ? "bg-white text-[#1A1A1A] hover:bg-[#C4A882] hover:text-white"
+                  : "bg-[#1A1A1A] text-white hover:bg-[#9B7D5E]"
+              }`}
             >
               Demander un accompagnement
             </Link>
@@ -91,17 +97,17 @@ export default function Header() {
             aria-expanded={isOpen}
           >
             <span
-              className={`block w-6 h-0.5 bg-[#1A1A1A] transition-all duration-300 ${
+              className={`block w-6 h-0.5 transition-all duration-300 ${darkHero ? "bg-white" : "bg-[#1A1A1A]"} ${
                 isOpen ? "rotate-45 translate-y-2" : ""
               }`}
             />
             <span
-              className={`block w-6 h-0.5 bg-[#1A1A1A] transition-all duration-300 ${
+              className={`block w-6 h-0.5 transition-all duration-300 ${darkHero ? "bg-white" : "bg-[#1A1A1A]"} ${
                 isOpen ? "opacity-0" : ""
               }`}
             />
             <span
-              className={`block w-6 h-0.5 bg-[#1A1A1A] transition-all duration-300 ${
+              className={`block w-6 h-0.5 transition-all duration-300 ${darkHero ? "bg-white" : "bg-[#1A1A1A]"} ${
                 isOpen ? "-rotate-45 -translate-y-2" : ""
               }`}
             />

@@ -70,27 +70,30 @@ export default function Footer() {
           <p className="text-xs text-[#9B7D5E]">
             © {currentYear} Agathe Orsoni. Tous droits réservés.
           </p>
-          <nav aria-label="Liens légaux">
-            <ul className="flex flex-wrap gap-x-5 gap-y-1">
-              {[
-                { href: "/mentions-legales", label: "Mentions légales" },
-                {
-                  href: "/politique-de-confidentialite",
-                  label: "Politique de confidentialité",
-                },
-                { href: "/cgv", label: "CGV" },
-              ].map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-xs text-[#9B7D5E] hover:text-[#1A1A1A] transition-colors"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </nav>
+          <div className="flex flex-col items-start sm:items-end gap-2">
+            <p className="text-xs text-[#9B7D5E]">Made with Claude with &lt;3</p>
+            <nav aria-label="Liens légaux">
+              <ul className="flex flex-wrap gap-x-5 gap-y-1">
+                {[
+                  { href: "/mentions-legales", label: "Mentions légales" },
+                  {
+                    href: "/politique-de-confidentialite",
+                    label: "Politique de confidentialité",
+                  },
+                  { href: "/cgv", label: "CGV" },
+                ].map((link) => (
+                  <li key={link.href}>
+                    <Link
+                      href={link.href}
+                      className="text-xs text-[#9B7D5E] hover:text-[#1A1A1A] transition-colors"
+                    >
+                      {link.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          </div>
         </div>
       </div>
     </footer>
