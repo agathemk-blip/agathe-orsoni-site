@@ -71,7 +71,7 @@ export default function Footer() {
             © {currentYear} Agathe Orsoni. Tous droits réservés.
           </p>
           <div className="flex flex-col items-start sm:items-end gap-2">
-            <p className="text-xs text-[#9B7D5E]">Made with Claude with &lt;3</p>
+            <p className="text-xs text-[#9B7D5E]">Made with Claude with ♥</p>
             <nav aria-label="Liens légaux">
               <ul className="flex flex-wrap gap-x-5 gap-y-1">
                 {[
