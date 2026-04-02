@@ -158,37 +158,26 @@ export default function MonOffrePage() {
           >
             Pour qui
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-3xl">
             {[
-              {
-                title: "Les dirigeants",
-                desc: "qui veulent que leur digital serve vraiment leur croissance — pas juste leur image.",
-              },
-              {
-                title: "Les équipes en transformation",
-                desc: "qui ont besoin d'un regard extérieur exigeant pour structurer, accélérer et intégrer l'IA.",
-              },
-              {
-                title: "Les entrepreneurs",
-                desc: "qui ont une vision mais manquent de méthode, d'outils ou d'exécution pour la concrétiser.",
-              },
-            ].map((item) => (
+              "Les TPE / PME qui veulent structurer leur digital.",
+              "Les entrepreneurs qui cherchent une vraie traction, pas des likes.",
+              "Les équipes en transformation qui ont besoin d'un regard extérieur exigeant.",
+              "Ceux qui veulent faire de l'IA un outil du quotidien, pas un projet pilote.",
+            ].map((cible, i) => (
               <div
-                key={item.title}
-                className="p-6 rounded-xl"
+                key={i}
+                className="flex items-start gap-4 p-5 rounded-xl"
                 style={{
                   background: "rgba(255,255,255,0.05)",
                   border: "1px solid rgba(255,255,255,0.1)",
                 }}
               >
-                <h3
-                  className="text-base font-semibold mb-3"
-                  style={{ color: "#FFFFFF" }}
-                >
-                  {item.title}
-                </h3>
-                <p className="text-sm leading-relaxed" style={{ color: "#9B7D5E" }}>
-                  {item.desc}
+                <span style={{ color: "#C4A882", fontSize: "1.1rem", marginTop: "1px" }}>
+                  →
+                </span>
+                <p className="text-sm leading-relaxed" style={{ color: "#FFFFFF" }}>
+                  {cible}
                 </p>
               </div>
             ))}

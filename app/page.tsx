@@ -5,12 +5,12 @@ import CTAButton from "@/components/CTAButton";
 export const metadata: Metadata = {
   title: "Agathe Orsoni — Consultante en Stratégie Digitale et IA",
   description:
-    "Je conçois des stratégies digitales qui génèrent de vraies performances business, et j'aide les équipes à faire de l'IA un levier de rentabilité. 15 ans d'expérience grands comptes.",
+    "J'accompagne dirigeants et équipes dans la construction de stratégies digitales et e-commerce concrètes, avec une lecture business et une approche opérationnelle. 15 ans d'expérience en retail et digital.",
   openGraph: {
     title: "Agathe Orsoni — Consultante en Stratégie Digitale et IA",
     description:
-      "Je conçois des stratégies digitales qui génèrent de vraies performances business. ROI comme moteur, IA comme accélérateur.",
-    url: "https://agatheorsoni.fr",
+      "Stratégie digitale et IA au service de la performance business. 15 ans d'expérience en retail et digital.",
+    url: "https://agathe-orsoni.vercel.app",
   },
 };
 
@@ -18,8 +18,7 @@ const references = [
   "Kusmi Tea",
   "Petit Bateau",
   "Contentsquare",
-  "Groupe Zebra",
-  "Acracy",
+  "BETC Digital",
 ];
 
 const pillars = [
@@ -58,45 +57,37 @@ const pillars = [
   },
 ];
 
-const results = [
+const differentiators = [
   {
-    value: "+10 000",
-    label: "abonnés YouTube",
-    detail: "en seulement 3 mois",
+    title: "Le ROI comme priorité",
+    desc: "Chaque action est orientée vers un résultat mesurable, connectée aux enjeux business réels.",
   },
   {
-    value: "CA stable",
-    label: "chaque mois",
-    detail: "grâce à des cours récurrents complets",
+    title: "L'IA comme levier d'efficacité",
+    desc: "Intégrée concrètement dans les stratégies, les process et les équipes, pas mise en avant pour faire bien.",
   },
   {
-    value: "Communauté",
-    label: "engagée",
-    detail: "autour de rendez-vous réguliers et identifiés",
+    title: "Stratégie et exécution",
+    desc: "Au-delà des recommandations, je peux porter les projets ou en assurer le suivi, jusqu'aux livrables concrets et aux premiers résultats.",
   },
   {
-    value: "Croissance",
-    label: "organique",
-    detail: "sur l'ensemble des réseaux sociaux",
+    title: "Écoute et proximité",
+    desc: "Je place l'humain au cœur de chaque projet, avec une attention sincère portée aux enjeux, aux personnes et à la réalité du terrain.",
   },
 ];
 
-const differentiators = [
+const testimonials = [
   {
-    title: "ROI comme boussole",
-    desc: "Chaque action est orientée vers un résultat mesurable. Je refuse les stratégies déconnectées des enjeux business réels.",
+    quote:
+      "Agathe a su exactement comment transformer une idée en résultat concret et impactant.",
+    name: "Juliette",
+    role: "Fondatrice, Le 4 de Bâton",
   },
   {
-    title: "IA intégrée, pas plaquée",
-    desc: "L'IA n'est pas un effet d'annonce. Je l'intègre concrètement dans les stratégies, les process et les équipes.",
-  },
-  {
-    title: "Stratégie + exécution",
-    desc: "Je ne livre pas seulement des slides. Je reste présente jusqu'aux livrables concrets et aux premiers résultats.",
-  },
-  {
-    title: "Exigence et clarté",
-    desc: "Je dis non aux projets sans ambition de transformation. Je m'engage pleinement sur ceux où je crée une vraie différence.",
+    quote:
+      "Agathe a su créer un site parfaitement aligné avec nos attentes, avec une rapidité d'exécution impressionnante, beaucoup de rigueur et une grande précision dans chaque détail.",
+    name: "Déborah",
+    role: "Mirza Conseil",
   },
 ];
 
@@ -128,24 +119,24 @@ export default function HomePage() {
                   color: "#1A1A1A",
                 }}
               >
-                Ce qui ne crée pas
+                Stratégie digitale et IA
                 <br />
-                de valeur n&rsquo;est
+                au service de la
                 <br />
-                <em>que du bruit.</em>
+                <em>performance business.</em>
               </h1>
 
               <p
                 className="text-lg leading-relaxed max-w-lg mb-10 animate-fade-up animate-delay-200"
                 style={{ color: "#6B6B6B" }}
               >
-                J&rsquo;aide les dirigeants et leurs équipes à construire des
-                stratégies digitales qui{" "}
+                J&rsquo;accompagne dirigeants et équipes dans la construction de
+                stratégies digitales et e-commerce concrètes, avec une lecture
+                business et une approche opérationnelle.{" "}
                 <strong style={{ color: "#1A1A1A", fontWeight: 500 }}>
-                  génèrent de vraies performances business
-                </strong>{" "}
-                — et à faire de l&rsquo;IA un levier de rentabilité concret,
-                pas un gadget.
+                  15 ans d&rsquo;expérience en retail et digital
+                </strong>
+                , de Petit Bateau à Kusmi Tea en passant par Contentsquare.
               </p>
 
               <div className="flex flex-col sm:flex-row items-start gap-4 animate-fade-up animate-delay-300">
@@ -223,9 +214,8 @@ export default function HomePage() {
                   color: "#FFFFFF",
                 }}
               >
-                &ldquo;Le digital n&rsquo;a de sens que s&rsquo;il sert la
-                croissance. Stratégie, opérationnel et IA avancent ensemble —
-                ou ils n&rsquo;avancent pas.&rdquo;
+                &ldquo;La performance digitale atteint son plein potentiel quand
+                stratégie, opérationnel et IA avancent vraiment ensemble.&rdquo;
               </p>
             </blockquote>
             <p className="mt-6 text-sm" style={{ color: "#9B7D5E" }}>
@@ -328,102 +318,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── CAS CLIENT ───────────────────────────────────── */}
-      <section
-        className="section-padding"
-        style={{ background: "#F4F1EC" }}
-        aria-labelledby="cas-heading"
-      >
-        <div className="container-site">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
-            <div>
-              <p
-                className="text-xs font-semibold uppercase tracking-widest mb-4"
-                style={{ color: "#9B7D5E" }}
-              >
-                Cas client
-              </p>
-              <h2
-                id="cas-heading"
-                className="font-light leading-tight mb-6"
-                style={{
-                  fontFamily: "var(--font-playfair), Georgia, serif",
-                  fontSize: "clamp(1.75rem, 3vw, 2.5rem)",
-                  color: "#1A1A1A",
-                }}
-              >
-                Le 4 de Bâton :<br />
-                passer d&rsquo;un projet
-                <br />à un système de croissance.
-              </h2>
-              <p
-                className="text-base leading-relaxed mb-5"
-                style={{ color: "#6B6B6B" }}
-              >
-                En 2024, Le 4 de Bâton voulait passer d&rsquo;un contenu
-                spontané à un modèle business structuré. L&rsquo;objectif
-                n&rsquo;était pas &ldquo;faire plus de contenu&rdquo; — mais
-                construire un système capable de générer une croissance
-                durable.
-              </p>
-              <p
-                className="text-base leading-relaxed mb-8"
-                style={{ color: "#6B6B6B" }}
-              >
-                L&rsquo;accompagnement a couvert la structuration de
-                l&rsquo;offre, la stratégie éditoriale, les outils digitaux et
-                les tunnels de conversion — de l&rsquo;identification des
-                formats jusqu&rsquo;au déploiement complet.
-              </p>
-              <CTAButton href="/qui-suis-je" size="md" variant="secondary">
-                En savoir plus sur mon approche
-              </CTAButton>
-            </div>
-
-            <div className="space-y-4">
-              {results.map((result) => (
-                <div
-                  key={result.value}
-                  className="flex items-start gap-5 p-6 rounded-xl"
-                  style={{
-                    background: "#FFFFFF",
-                    border: "1px solid #E5E0D8",
-                  }}
-                >
-                  <div className="flex-shrink-0">
-                    <p
-                      className="text-2xl font-semibold"
-                      style={{
-                        fontFamily: "var(--font-playfair), Georgia, serif",
-                        color: "#1A1A1A",
-                      }}
-                    >
-                      {result.value}
-                    </p>
-                    <p
-                      className="text-sm font-medium"
-                      style={{ color: "#9B7D5E" }}
-                    >
-                      {result.label}
-                    </p>
-                  </div>
-                  <div
-                    className="self-stretch"
-                    style={{ width: "1px", background: "#E5E0D8" }}
-                  />
-                  <p
-                    className="text-sm self-center leading-snug"
-                    style={{ color: "#6B6B6B" }}
-                  >
-                    {result.detail}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* ── À PROPOS MINI ────────────────────────────────── */}
       <section
         className="section-padding"
@@ -470,21 +364,24 @@ export default function HomePage() {
                 className="text-base leading-relaxed mb-5"
                 style={{ color: "#6B6B6B" }}
               >
-                Après 15 ans dans le marketing et le digital auprès de marques
+                Après 15 ans dans le marketing et le digital, auprès de marques
                 comme{" "}
                 <strong style={{ color: "#1A1A1A", fontWeight: 500 }}>
                   Kusmi Tea, Petit Bateau et Contentsquare
                 </strong>
-                , j&rsquo;ai choisi de travailler directement au service des
-                entreprises qui veulent transformer leur digital en actif
-                business réel — sans politique, sans bruit inutile.
+                , j&rsquo;ai choisi de travailler autrement : en prenant le
+                temps de comprendre vraiment chaque contexte, chaque équipe,
+                chaque enjeu. Pas de solution standard. Chaque collaboration est
+                construite sur mesure, à partir de ce qui compte réellement pour
+                l&rsquo;entreprise.
               </p>
               <p
                 className="text-base leading-relaxed mb-8"
                 style={{ color: "#6B6B6B" }}
               >
-                Mon engagement : stratégie, opérationnel et IA avancent
-                ensemble. Jamais l&rsquo;un sans l&rsquo;autre.
+                Mon engagement : une approche qui articule stratégie,
+                opérationnel et IA, avec une dimension humaine au cœur de chaque
+                collaboration.
               </p>
               <CTAButton href="/qui-suis-je" size="md" variant="ghost">
                 Découvrir mon parcours
@@ -527,7 +424,7 @@ export default function HomePage() {
             {differentiators.map((item) => (
               <div
                 key={item.title}
-                className="p-6 rounded-xl transition-colors duration-200"
+                className="p-6 rounded-xl"
                 style={{
                   background: "#FFFFFF",
                   border: "1px solid #E5E0D8",
@@ -549,6 +446,80 @@ export default function HomePage() {
                 >
                   {item.desc}
                 </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── AVIS CLIENTS ─────────────────────────────────── */}
+      <section
+        className="section-padding"
+        style={{ background: "#FAFAF8" }}
+        aria-labelledby="avis-heading"
+      >
+        <div className="container-site">
+          <div className="max-w-xl mb-14">
+            <p
+              className="text-xs font-semibold uppercase tracking-widest mb-4"
+              style={{ color: "#9B7D5E" }}
+            >
+              Avis clients
+            </p>
+            <h2
+              id="avis-heading"
+              className="font-light leading-tight"
+              style={{
+                fontFamily: "var(--font-playfair), Georgia, serif",
+                fontSize: "clamp(1.75rem, 3vw, 2.5rem)",
+                color: "#1A1A1A",
+              }}
+            >
+              Ce qu&rsquo;ils disent
+              <br />
+              de la collaboration.
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl">
+            {testimonials.map((t, i) => (
+              <div
+                key={i}
+                className="p-8 rounded-2xl flex flex-col justify-between"
+                style={{ background: "#F4F1EC", border: "1px solid #E5E0D8" }}
+              >
+                <div
+                  className="text-3xl font-light mb-4 leading-none"
+                  style={{
+                    fontFamily: "var(--font-playfair), Georgia, serif",
+                    color: "#C4A882",
+                  }}
+                >
+                  &ldquo;
+                </div>
+                <p
+                  className="text-base leading-relaxed mb-8 flex-1"
+                  style={{ color: "#1A1A1A" }}
+                >
+                  {t.quote}
+                </p>
+                <div className="flex items-center gap-3">
+                  <div
+                    className="w-8 h-px"
+                    style={{ background: "#9B7D5E" }}
+                  />
+                  <div>
+                    <p
+                      className="text-sm font-semibold"
+                      style={{ color: "#1A1A1A" }}
+                    >
+                      {t.name}
+                    </p>
+                    <p className="text-xs" style={{ color: "#9B7D5E" }}>
+                      {t.role}
+                    </p>
+                  </div>
+                </div>
               </div>
             ))}
           </div>

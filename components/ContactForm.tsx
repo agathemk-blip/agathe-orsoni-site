@@ -289,12 +289,6 @@ export default function ContactForm() {
         {status === "loading" ? "Envoi en cours…" : "Envoyer mon message"}
       </button>
 
-      <p
-        className="text-xs text-center mt-4"
-        style={{ color: "#9B7D5E" }}
-      >
-        Je vous réponds dans les 48h ouvrées.
-      </p>
     </form>
   );
 }

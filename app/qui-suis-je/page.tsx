@@ -5,12 +5,12 @@ import CTAButton from "@/components/CTAButton";
 export const metadata: Metadata = {
   title: "Qui suis-je — Agathe Orsoni",
   description:
-    "15 ans d'expérience en marketing et stratégie digitale. Passée par Kusmi Tea, Petit Bateau et Contentsquare, j'accompagne aujourd'hui les entreprises dans leur transformation digitale avec l'IA comme accélérateur.",
+    "15 ans d'expérience en marketing, e-commerce et transformation digitale. Passée par Kusmi Tea, Petit Bateau, Contentsquare et BETC Digital, j'accompagne aujourd'hui les entreprises dans leur stratégie digitale et l'intégration de l'IA.",
   openGraph: {
     title: "Qui suis-je — Agathe Orsoni, Consultante Stratégie Digitale & IA",
     description:
-      "15 ans d'expérience grands comptes → consultante indépendante. Mon parcours, ma vision, ma manière de travailler.",
-    url: "https://agatheorsoni.fr/qui-suis-je",
+      "15 ans d'expérience grands comptes → consultante indépendante. Mon parcours, mes convictions, ma manière de travailler.",
+    url: "https://agathe-orsoni.vercel.app/qui-suis-je",
   },
 };
 
@@ -19,39 +19,52 @@ const experiences = [
     period: "Aujourd'hui",
     role: "Consultante indépendante",
     company: "Stratégie digitale & IA",
-    desc: "J'accompagne dirigeants et équipes dans la construction de stratégies digitales orientées ROI et l'intégration concrète de l'IA dans les organisations.",
+    desc: "J'accompagne les entreprises dans leurs enjeux de stratégie digitale et de transformation, en alliant vision stratégique et mise en œuvre opérationnelle : positionnement, site web, outils, parcours clients, pilotage de projets et intégration concrète de l'IA.",
   },
   {
-    period: "2022 – 2023",
-    role: "Experte digitale",
+    period: "2022 – 2025",
+    role: "Customer Success et transformation d'une organisation SaaS",
     company: "Contentsquare",
-    desc: "Environnement international de référence en analytics et expérience utilisateur. Confirmation de mon expertise en transformation digitale et en performance.",
+    desc: "Management d'une équipe en charge de faire évoluer l'organisation Customer Success vers un modèle plus scalable, plus structuré et davantage orienté valeur.",
   },
   {
-    period: "Avant 2022",
-    role: "Marketing & e-commerce",
-    company: "Kusmi Tea, Petit Bateau",
-    desc: "15 ans d'expérience en marketing client, e-commerce et pilotage de la performance dans des environnements retail et internationaux exigeants.",
+    period: "2020 – 2022",
+    role: "Direction digitale omnicanale et rôle de CODIR",
+    company: "Kusmi Tea",
+    desc: "Membre du comité de direction, en charge de la transformation digitale omnicanale, de l'expérience client et de la performance e-commerce. Pilotage stratégique et opérationnel de l'activité digitale en France et à l'international, avec la responsabilité des P&L e-commerce.",
+  },
+  {
+    period: "2012 – 2020",
+    role: "Pilotage de la performance e-commerce et CRM international",
+    company: "Petit Bateau",
+    desc: "Expérience construite au croisement du CRM, de l'animation des marchés internationaux, du e-commerce et du pilotage digital. Un rôle transverse, au service de la performance commerciale, de la fidélisation client et de la coordination entre les expertises centrales et les marchés.",
   },
 ];
 
-const values = [
+const convictions = [
   {
-    title: "L'efficacité ne peut pas exister sans respect de l'humain.",
-    desc: "C'est la conviction qui m'a amenée à quitter le salariat. Je refuse les organisations où l'on parle fort pour exister, où la pression remplace la stratégie.",
+    title: "Le ROI comme priorité.",
+    desc: "Chaque action doit répondre à un enjeu business clair et contribuer à un résultat mesurable.",
   },
   {
-    title: "Stratégie, opérationnel, IA : les trois ou rien.",
-    desc: "Je n'interviens jamais sur un seul volet. Une stratégie sans exécution est un PowerPoint. Une exécution sans stratégie est de l'agitation. L'IA sans l'un ni l'autre, c'est du bruit.",
+    title: "L'IA comme levier d'efficacité.",
+    desc: "Je l'intègre de manière concrète dans les stratégies, les process et les équipes, avec une seule exigence : qu'elle fasse gagner en pertinence, en temps et en impact.",
   },
   {
-    title: "Le ROI n'est pas un gros mot.",
-    desc: "Je travaille pour que votre digital génère des résultats mesurables. Trafic, leads, ventes, fidélisation — pas des métriques de vanité.",
+    title: "Stratégie et exécution.",
+    desc: "Je ne m'arrête pas aux recommandations : je peux porter les projets ou en assurer le suivi jusqu'à leur mise en œuvre effective.",
   },
   {
-    title: "Je dis non pour pouvoir dire oui vraiment.",
-    desc: "Je refuse les projets sans ambition de transformation réelle. Quand je m'engage, je m'engage complètement — jusqu'aux résultats.",
+    title: "Écoute et proximité.",
+    desc: "Je place l'humain au cœur de chaque projet, avec une attention réelle portée aux besoins, aux contextes et à la réalité du terrain.",
   },
+];
+
+const cibles = [
+  "Les TPE / PME qui veulent structurer leur digital.",
+  "Les entrepreneurs qui cherchent une vraie traction, pas des likes.",
+  "Les équipes en transformation qui ont besoin d'un regard extérieur exigeant.",
+  "Ceux qui veulent faire de l'IA un outil du quotidien, pas un projet pilote.",
 ];
 
 export default function QuiSuisJePage() {
@@ -115,33 +128,30 @@ export default function QuiSuisJePage() {
                     transformation digitale
                   </strong>{" "}
                   auprès de marques comme Kusmi Tea, Petit Bateau et
-                  Contentsquare, j&rsquo;ai construit une expertise à
-                  l&rsquo;intersection de la stratégie, de l&rsquo;opérationnel
-                  et de la performance.
+                  Contentsquare ou BETC Digital, j&rsquo;ai construit une
+                  expertise à l&rsquo;intersection de la stratégie, de
+                  l&rsquo;opérationnel et de la performance.
                 </p>
                 <p
                   className="text-base leading-relaxed"
                   style={{ color: "#6B6B6B" }}
                 >
-                  En 2022, une expérience de management toxique chez Kusmi Tea
-                  a été le déclencheur. J&rsquo;ai compris ce jour-là que{" "}
-                  <em style={{ color: "#1A1A1A" }}>
-                    l&rsquo;efficacité ne peut pas exister sans respect de
-                    l&rsquo;humain.
-                  </em>{" "}
-                  Puis Contentsquare a confirmé mon aversion pour un monde du
-                  salariat trop politique, où ceux qui parlent le plus fort sont
-                  souvent mieux reconnus que ceux qui font bien.
+                  Mon parcours m&rsquo;a permis d&rsquo;affiner une conviction
+                  essentielle : les transformations les plus solides sont celles
+                  qui placent l&rsquo;humain au cœur de l&rsquo;action.
+                  C&rsquo;est cette vision, à la fois exigeante et profondément
+                  concrète, qui guide aujourd&rsquo;hui ma manière
+                  d&rsquo;accompagner les entreprises.
                 </p>
                 <p
                   className="text-base leading-relaxed"
                   style={{ color: "#6B6B6B" }}
                 >
-                  J&rsquo;ai alors fait le grand saut : travailler pour moi,
-                  pour mettre mon savoir-faire au service des entreprises dans
-                  un cadre fondé sur le{" "}
+                  J&rsquo;ai choisi de travailler de manière indépendante pour
+                  mettre mon expérience au service de projets portés par{" "}
                   <strong style={{ color: "#1A1A1A", fontWeight: 500 }}>
-                    respect, l&rsquo;écoute et l&rsquo;efficacité réelle.
+                    l&rsquo;écoute, le respect, la clarté et la recherche
+                    d&rsquo;un impact tangible.
                   </strong>
                 </p>
               </div>
@@ -177,14 +187,13 @@ export default function QuiSuisJePage() {
                 color: "#1A1A1A",
               }}
             >
-              Une expertise construite
+              Une expertise à l&rsquo;intersection
               <br />
-              dans les tranchées du digital.
+              de la stratégie, du digital et de l&rsquo;exécution.
             </h2>
           </div>
 
           <div className="relative">
-            {/* Ligne verticale */}
             <div
               className="absolute left-0 top-0 bottom-0 hidden md:block"
               style={{ width: "1px", background: "#E5E0D8", left: "120px" }}
@@ -270,14 +279,12 @@ export default function QuiSuisJePage() {
                 color: "#1A1A1A",
               }}
             >
-              Mes convictions
-              <br />
-              ne sont pas négociables.
+              Mes convictions.
             </h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {values.map((v, i) => (
+            {convictions.map((v, i) => (
               <div
                 key={i}
                 className="p-8 rounded-2xl"
@@ -305,86 +312,61 @@ export default function QuiSuisJePage() {
         </div>
       </section>
 
-      {/* ── APPROCHE ─────────────────────────────────────── */}
+      {/* ── À QUI JE M'ADRESSE ───────────────────────────── */}
       <section
         className="section-padding"
-        style={{ background: "#1A1A1A" }}
-        aria-labelledby="approche-heading"
+        style={{ background: "#F4F1EC" }}
+        aria-labelledby="cibles-heading"
       >
         <div className="container-site">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-            <div>
-              <p
-                className="text-xs font-semibold uppercase tracking-widest mb-6"
-                style={{ color: "#C4A882" }}
-              >
-                Ma posture
-              </p>
-              <h2
-                id="approche-heading"
-                className="font-light leading-tight mb-8"
+          <div className="max-w-2xl mb-10">
+            <p
+              className="text-xs font-semibold uppercase tracking-widest mb-4"
+              style={{ color: "#9B7D5E" }}
+            >
+              À qui je m&rsquo;adresse
+            </p>
+            <h2
+              id="cibles-heading"
+              className="font-light leading-tight mb-4"
+              style={{
+                fontFamily: "var(--font-playfair), Georgia, serif",
+                fontSize: "clamp(1.75rem, 3vw, 2.5rem)",
+                color: "#1A1A1A",
+              }}
+            >
+              J&rsquo;accompagne ceux qui veulent
+              <br />
+              un impact réel, pas des promesses.
+            </h2>
+            <p className="text-base leading-relaxed" style={{ color: "#6B6B6B" }}>
+              Mon accompagnement s&rsquo;adresse à des profils variés, réunis
+              par une même exigence : transformer leur digital en levier de
+              croissance concret et mesurable.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-3xl">
+            {cibles.map((cible, i) => (
+              <div
+                key={i}
+                className="flex items-start gap-4 p-5 rounded-xl"
                 style={{
-                  fontFamily: "var(--font-playfair), Georgia, serif",
-                  fontSize: "clamp(1.75rem, 3vw, 2.5rem)",
-                  color: "#FFFFFF",
+                  background: "#FFFFFF",
+                  border: "1px solid #E5E0D8",
                 }}
               >
-                Je me donne le droit
-                <br />
-                d&rsquo;être exigeante.
-              </h2>
-              <p
-                className="text-base leading-relaxed mb-5"
-                style={{ color: "#9B7D5E" }}
-              >
-                Je refuse les cadres figés, les discours déconnectés du réel et
-                les projets sans ambition de transformation. Je m&rsquo;engage à
-                affirmer clairement ce que je propose et à défendre une vision
-                du digital orientée ROI.
-              </p>
-              <p
-                className="text-base leading-relaxed"
-                style={{ color: "#9B7D5E" }}
-              >
-                Stratégie, opérationnel et IA avancent ensemble. Parce que
-                j&rsquo;ai l&rsquo;expérience des trois, je ne cloisonne
-                jamais. Je les intègre comme un levier concret d&rsquo;efficacité
-                et de rentabilité, au service du ROI et des usages réels.
-              </p>
-            </div>
-            <div className="space-y-4">
-              {[
-                { pour: "Les TPE / PME qui veulent structurer leur digital." },
-                {
-                  pour: "Les entrepreneurs qui cherchent une vraie traction, pas des likes.",
-                },
-                {
-                  pour: "Les équipes en transformation qui ont besoin d'un regard extérieur exigeant.",
-                },
-                {
-                  pour: "Ceux qui veulent faire de l'IA un outil du quotidien, pas un projet pilote.",
-                },
-              ].map((item, i) => (
-                <div
-                  key={i}
-                  className="flex items-start gap-4 p-5 rounded-xl"
-                  style={{
-                    background: "rgba(255,255,255,0.05)",
-                    border: "1px solid rgba(255,255,255,0.1)",
-                  }}
+                <span style={{ color: "#9B7D5E", fontSize: "1.1rem", marginTop: "1px" }}>
+                  →
+                </span>
+                <p
+                  className="text-sm leading-relaxed"
+                  style={{ color: "#1A1A1A" }}
                 >
-                  <span style={{ color: "#C4A882", fontSize: "1.25rem" }}>
-                    →
-                  </span>
-                  <p
-                    className="text-sm leading-relaxed"
-                    style={{ color: "#FFFFFF" }}
-                  >
-                    {item.pour}
-                  </p>
-                </div>
-              ))}
-            </div>
+                  {cible}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
