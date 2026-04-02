@@ -219,7 +219,7 @@ export default function HomePage() {
               </p>
             </blockquote>
             <p className="mt-6 text-sm" style={{ color: "#9B7D5E" }}>
-              — Agathe Orsoni
+              Agathe Orsoni
             </p>
           </div>
         </div>
@@ -398,27 +398,12 @@ export default function HomePage() {
         aria-labelledby="reassurance-heading"
       >
         <div className="container-site">
-          <div className="max-w-xl mb-14">
-            <p
-              className="text-xs font-semibold uppercase tracking-widest mb-4"
-              style={{ color: "#9B7D5E" }}
-            >
-              Pourquoi travailler avec moi
-            </p>
-            <h2
-              id="reassurance-heading"
-              className="font-light leading-tight"
-              style={{
-                fontFamily: "var(--font-playfair), Georgia, serif",
-                fontSize: "clamp(1.75rem, 3vw, 2.5rem)",
-                color: "#1A1A1A",
-              }}
-            >
-              Une consultante qui fait
-              <br />
-              ce qu&rsquo;elle dit.
-            </h2>
-          </div>
+          <p
+            className="text-xs font-semibold uppercase tracking-widest mb-10"
+            style={{ color: "#9B7D5E" }}
+          >
+            Pourquoi travailler avec moi
+          </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {differentiators.map((item) => (
@@ -489,7 +474,7 @@ export default function HomePage() {
                 style={{ background: "#F4F1EC", border: "1px solid #E5E0D8" }}
               >
                 <div
-                  className="text-3xl font-light mb-4 leading-none"
+                  className="text-6xl font-light mb-2 leading-none"
                   style={{
                     fontFamily: "var(--font-playfair), Georgia, serif",
                     color: "#C4A882",

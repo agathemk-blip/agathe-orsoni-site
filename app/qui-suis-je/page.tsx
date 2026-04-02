@@ -62,7 +62,7 @@ const convictions = [
 
 const cibles = [
   "Les TPE / PME qui veulent structurer leur digital.",
-  "Les entrepreneurs qui cherchent une vraie traction, pas des likes.",
+  "Les entrepreneurs qui cherchent à se structurer et montée en compétence sur l'IA.",
   "Les équipes en transformation qui ont besoin d'un regard extérieur exigeant.",
   "Ceux qui veulent faire de l'IA un outil du quotidien, pas un projet pilote.",
 ];
@@ -108,13 +108,15 @@ export default function QuiSuisJePage() {
                 className="font-light leading-tight mb-8"
                 style={{
                   fontFamily: "var(--font-playfair), Georgia, serif",
-                  fontSize: "clamp(2rem, 4vw, 3.25rem)",
+                  fontSize: "clamp(1.6rem, 3.2vw, 2.75rem)",
                   color: "#1A1A1A",
                 }}
               >
-                J&rsquo;ai choisi la liberté
+                Allier stratégie, action et humain
                 <br />
-                de créer de la vraie valeur.
+                pour vous accompagner
+                <br />
+                au plus près de vos enjeux.
               </h1>
 
               <div className="space-y-5 mb-10">
@@ -122,15 +124,11 @@ export default function QuiSuisJePage() {
                   className="text-base leading-relaxed"
                   style={{ color: "#6B6B6B" }}
                 >
-                  Avec plus de{" "}
-                  <strong style={{ color: "#1A1A1A", fontWeight: 500 }}>
-                    15 ans d&rsquo;expérience en marketing, e-commerce et
-                    transformation digitale
-                  </strong>{" "}
-                  auprès de marques comme Kusmi Tea, Petit Bateau et
-                  Contentsquare ou BETC Digital, j&rsquo;ai construit une
-                  expertise à l&rsquo;intersection de la stratégie, de
-                  l&rsquo;opérationnel et de la performance.
+                  Avec plus de 15 ans d&rsquo;expérience en marketing,
+                  e-commerce et transformation digitale auprès de marques comme
+                  Kusmi Tea, Petit Bateau et Contentsquare ou BETC Digital,
+                  j&rsquo;ai construit une expertise à l&rsquo;intersection de
+                  la stratégie, de l&rsquo;opérationnel et de la performance.
                 </p>
                 <p
                   className="text-base leading-relaxed"
@@ -148,11 +146,9 @@ export default function QuiSuisJePage() {
                   style={{ color: "#6B6B6B" }}
                 >
                   J&rsquo;ai choisi de travailler de manière indépendante pour
-                  mettre mon expérience au service de projets portés par{" "}
-                  <strong style={{ color: "#1A1A1A", fontWeight: 500 }}>
-                    l&rsquo;écoute, le respect, la clarté et la recherche
-                    d&rsquo;un impact tangible.
-                  </strong>
+                  mettre mon expérience au service de projets portés par
+                  l&rsquo;écoute, le respect, la clarté et la recherche
+                  d&rsquo;un impact tangible.
                 </p>
               </div>
 
@@ -326,23 +322,9 @@ export default function QuiSuisJePage() {
             >
               À qui je m&rsquo;adresse
             </p>
-            <h2
-              id="cibles-heading"
-              className="font-light leading-tight mb-4"
-              style={{
-                fontFamily: "var(--font-playfair), Georgia, serif",
-                fontSize: "clamp(1.75rem, 3vw, 2.5rem)",
-                color: "#1A1A1A",
-              }}
-            >
-              J&rsquo;accompagne ceux qui veulent
-              <br />
-              un impact réel, pas des promesses.
-            </h2>
             <p className="text-base leading-relaxed" style={{ color: "#6B6B6B" }}>
-              Mon accompagnement s&rsquo;adresse à des profils variés, réunis
-              par une même exigence : transformer leur digital en levier de
-              croissance concret et mesurable.
+              Stratégie, opérationnel et IA avancent ensemble. Parce que
+              j&rsquo;ai l&rsquo;expérience des trois, je ne cloisonne jamais.
             </p>
           </div>
 

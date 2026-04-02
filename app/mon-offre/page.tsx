@@ -18,7 +18,7 @@ const phases = [
     number: "01",
     title: "Construire",
     subtitle: "La fondation stratégique",
-    forWho: "Vous avez un projet, une activité, une vision — mais pas encore de cap digital clair.",
+    forWho: "Vous avez un projet, une activité, une vision, mais pas encore de cap digital clair.",
     problem:
       "Vous investissez du temps et de l'énergie dans le digital sans vraiment savoir où vous allez. Vos actions ne forment pas une stratégie cohérente. L'offre existe, mais elle n'est pas lisible ni activable.",
     what: [
@@ -37,7 +37,7 @@ const phases = [
     title: "Déployer",
     subtitle: "La présence et les outils",
     forWho:
-      "Vous avez une stratégie mais votre présence en ligne ne la reflète pas — ou elle est inexistante.",
+      "Vous avez une stratégie mais votre présence en ligne ne la reflète pas, ou elle est inexistante.",
     problem:
       "Votre site web ne convertit pas. Vos outils digitaux sont éparpillés et ne forment pas un système. Vous perdez des clients à chaque étape du parcours parce que les tunnels ne sont pas structurés.",
     what: [
@@ -49,7 +49,7 @@ const phases = [
       "Mise en place d'automatisations et de newsletters",
     ],
     benefit:
-      "Votre présence digitale devient un actif business qui travaille pour vous — 24h/24, de manière cohérente.",
+      "Votre présence digitale devient un actif business qui travaille pour vous, 24h/24, de manière cohérente.",
   },
   {
     number: "03",
@@ -68,7 +68,7 @@ const phases = [
       "Rituels de pilotage et de performance",
     ],
     benefit:
-      "Votre croissance devient systémique, mesurable et reproductible — sans dépendre de l'aléatoire.",
+      "Votre croissance devient systémique, mesurable et reproductible, sans dépendre de l'aléatoire.",
   },
 ];
 
@@ -133,10 +133,9 @@ export default function MonOffrePage() {
               className="text-lg leading-relaxed max-w-2xl mb-10"
               style={{ color: "#6B6B6B" }}
             >
-              Je ne livre pas des livrables. Je construis avec vous un système
-              digital qui génère de la performance mesurable — trafic,
-              leads, ventes — en intégrant l&rsquo;IA comme accélérateur
-              concret et non comme effet d&rsquo;annonce.
+              Je ne livre pas seulement des livrables. Je construis avec vous
+              un système digital pensé pour générer une performance mesurable,
+              en intégrant l&rsquo;IA de façon concrète.
             </p>
             <CTAButton href="/contact" size="lg" variant="primary">
               Demander un accompagnement
@@ -161,7 +160,7 @@ export default function MonOffrePage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-3xl">
             {[
               "Les TPE / PME qui veulent structurer leur digital.",
-              "Les entrepreneurs qui cherchent une vraie traction, pas des likes.",
+              "Les entrepreneurs qui cherchent à se structurer et montée en compétence sur l'IA.",
               "Les équipes en transformation qui ont besoin d'un regard extérieur exigeant.",
               "Ceux qui veulent faire de l'IA un outil du quotidien, pas un projet pilote.",
             ].map((cible, i) => (
@@ -375,7 +374,7 @@ export default function MonOffrePage() {
                 className="text-sm font-semibold uppercase tracking-widest mb-2"
                 style={{ color: "#9B7D5E" }}
               >
-                Le 4 de Bâton — 2024
+                Le 4 de Bâton — 2025
               </p>
               <h3
                 className="text-xl font-medium mb-4"

@@ -75,10 +75,10 @@ export default function ContactPage() {
                   "Structurer vos campagnes et vos contenus",
                   "Accompagner votre transformation digitale",
                 ].map((item) => (
-                  <div key={item} className="flex items-start gap-3">
+                  <div key={item} className="flex items-center gap-3">
                     <span
-                      className="mt-1 flex-shrink-0"
-                      style={{ color: "#9B7D5E", fontSize: "1rem" }}
+                      className="flex-shrink-0"
+                      style={{ color: "#9B7D5E", fontSize: "1rem", lineHeight: 1 }}
                     >
                       →
                     </span>
