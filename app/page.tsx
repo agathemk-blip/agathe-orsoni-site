@@ -96,94 +96,103 @@ export default function HomePage() {
     <>
       {/* ── HERO ─────────────────────────────────────────── */}
       <section
-        className="relative min-h-screen flex items-center pt-20"
+        className="relative min-h-screen flex items-center overflow-hidden"
         aria-labelledby="hero-heading"
       >
-        <div className="container-site w-full py-16 md:py-24">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            {/* Texte */}
-            <div className="order-2 lg:order-1">
-              <p
-                className="text-xs font-semibold uppercase tracking-widest mb-6 animate-fade-up"
-                style={{ color: "#9B7D5E" }}
-              >
-                Consultante en stratégie digitale &amp; IA
-              </p>
+        {/* Photo plein fond */}
+        <Image
+          src="/agathe-pro.jpg"
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover"
+          style={{ objectPosition: "65% top" }}
+        />
 
-              <h1
-                id="hero-heading"
-                className="font-light leading-[1.1] tracking-tight mb-6 animate-fade-up animate-delay-100"
-                style={{
-                  fontFamily: "var(--font-playfair), Georgia, serif",
-                  fontSize: "clamp(2.4rem, 4.5vw, 4rem)",
-                  color: "#1A1A1A",
-                }}
-              >
-                Digital et IA
-                <br />
-                au service de la
-                <br />
-                <em>performance</em>
-              </h1>
+        {/* Gradient : cream opaque à gauche, transparent à droite */}
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(to right, #FAFAF8 38%, rgba(250,250,248,0.92) 52%, rgba(250,250,248,0.5) 68%, transparent 85%)",
+          }}
+        />
+        {/* Gradient mobile : bas opaque */}
+        <div
+          className="absolute inset-0 lg:hidden"
+          style={{
+            background:
+              "linear-gradient(to top, #FAFAF8 45%, rgba(250,250,248,0.7) 65%, transparent 85%)",
+          }}
+        />
 
-              <p
-                className="text-lg leading-relaxed max-w-lg mb-10 animate-fade-up animate-delay-200"
-                style={{ color: "#6B6B6B" }}
-              >
-                J&rsquo;accompagne dirigeants et équipes dans la construction de
-                stratégies digitales et e-commerce concrètes, avec une lecture
-                business et une approche opérationnelle.{" "}
-                <strong style={{ color: "#1A1A1A", fontWeight: 500 }}>
-                  15 ans d&rsquo;expérience en retail et digital
-                </strong>
-                , de Petit Bateau à Kusmi Tea en passant par Contentsquare.
-              </p>
+        {/* Contenu */}
+        <div className="relative z-10 container-site w-full pt-32 pb-20 md:pt-40 md:pb-28">
+          <div className="max-w-xl">
+            <p
+              className="text-xs font-semibold uppercase tracking-widest mb-6 animate-fade-up"
+              style={{ color: "#9B7D5E" }}
+            >
+              Consultante en stratégie digitale &amp; IA
+            </p>
 
-              <div className="flex flex-col sm:flex-row items-start gap-4 animate-fade-up animate-delay-300">
-                <CTAButton href="/contact" size="lg" variant="primary">
-                  Demander un accompagnement
-                </CTAButton>
-                <CTAButton href="/mon-offre" size="lg" variant="ghost">
-                  Découvrir l&rsquo;offre
-                </CTAButton>
-              </div>
+            <h1
+              id="hero-heading"
+              className="font-light leading-[1.05] tracking-tight mb-8 animate-fade-up animate-delay-100"
+              style={{
+                fontFamily: "var(--font-playfair), Georgia, serif",
+                fontSize: "clamp(2.8rem, 5.5vw, 5rem)",
+                color: "#1A1A1A",
+              }}
+            >
+              Digital et IA
+              <br />
+              au service de la
+              <br />
+              <em>performance</em>
+            </h1>
 
-              {/* Références */}
-              <div className="mt-14 animate-fade-up animate-delay-400">
-                <p
-                  className="text-xs uppercase tracking-widest mb-4"
-                  style={{ color: "#9B7D5E" }}
-                >
-                  Expérience construite auprès de
-                </p>
-                <div className="flex flex-wrap gap-x-6 gap-y-2">
-                  {references.map((ref) => (
-                    <span
-                      key={ref}
-                      className="text-sm font-medium"
-                      style={{ color: "#6B6B6B" }}
-                    >
-                      {ref}
-                    </span>
-                  ))}
-                </div>
-              </div>
+            <p
+              className="text-base leading-relaxed mb-10 animate-fade-up animate-delay-200"
+              style={{ color: "#4A4A4A", maxWidth: "440px" }}
+            >
+              J&rsquo;accompagne dirigeants et équipes dans la construction de
+              stratégies digitales et e-commerce concrètes, avec une lecture
+              business et une approche opérationnelle.{" "}
+              <strong style={{ color: "#1A1A1A", fontWeight: 500 }}>
+                15 ans d&rsquo;expérience en retail et digital
+              </strong>
+              , de Petit Bateau à Kusmi Tea en passant par Contentsquare.
+            </p>
+
+            <div className="flex flex-col sm:flex-row items-start gap-4 animate-fade-up animate-delay-300">
+              <CTAButton href="/contact" size="lg" variant="primary">
+                Demander un accompagnement
+              </CTAButton>
+              <CTAButton href="/mon-offre" size="lg" variant="ghost">
+                Découvrir l&rsquo;offre
+              </CTAButton>
             </div>
 
-            {/* Photo */}
-            <div className="order-1 lg:order-2 flex justify-center lg:justify-end animate-fade-up">
-              <div
-                className="relative w-full max-w-[440px] rounded-2xl overflow-hidden"
-                style={{ aspectRatio: "3/4", background: "#F4F1EC" }}
+            {/* Références */}
+            <div className="mt-16 animate-fade-up animate-delay-400">
+              <p
+                className="text-xs uppercase tracking-widest mb-4"
+                style={{ color: "#9B7D5E" }}
               >
-                <Image
-                  src="/agathe-pro.jpg"
-                  alt="Agathe Orsoni, consultante en stratégie digitale et IA"
-                  fill
-                  priority
-                  sizes="(max-width: 1024px) 90vw, 45vw"
-                  className="object-cover object-top"
-                />
+                Expérience construite auprès de
+              </p>
+              <div className="flex flex-wrap gap-x-6 gap-y-2">
+                {references.map((ref) => (
+                  <span
+                    key={ref}
+                    className="text-sm font-medium"
+                    style={{ color: "#6B6B6B" }}
+                  >
+                    {ref}
+                  </span>
+                ))}
               </div>
             </div>
           </div>
