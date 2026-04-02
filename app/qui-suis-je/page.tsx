@@ -79,10 +79,10 @@ export default function QuiSuisJePage() {
         <div className="container-site">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
             {/* Photo */}
-            <div className="lg:col-span-5 order-1">
+            <div className="lg:col-span-5 order-1 lg:self-stretch">
               <div
-                className="relative w-full max-w-md rounded-2xl overflow-hidden"
-                style={{ aspectRatio: "3/4", background: "#F4F1EC" }}
+                className="relative w-full max-w-md rounded-2xl overflow-hidden lg:h-full"
+                style={{ minHeight: "480px", background: "#F4F1EC" }}
               >
                 <Image
                   src="/agathe-pro.jpg"
@@ -112,9 +112,9 @@ export default function QuiSuisJePage() {
                   color: "#1A1A1A",
                 }}
               >
-                Allier stratégie, action et humain
+                Allier stratégie, action
                 <br />
-                pour vous accompagner
+                et humain pour vous accompagner
                 <br />
                 au plus près de vos enjeux.
               </h1>

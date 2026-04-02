@@ -119,11 +119,11 @@ export default function HomePage() {
                   color: "#1A1A1A",
                 }}
               >
-                Stratégie digitale et IA
+                Digital et IA
                 <br />
                 au service de la
                 <br />
-                <em>performance business.</em>
+                <em>performance</em>
               </h1>
 
               <p
