@@ -99,31 +99,23 @@ export default function HomePage() {
         className="relative min-h-screen flex items-center overflow-hidden"
         aria-labelledby="hero-heading"
       >
-        {/* Photo plein fond */}
+        {/* Background image */}
         <Image
-          src="/agathe-pro.jpg"
+          src="/hero-bg.webp"
           alt=""
           fill
           priority
           sizes="100vw"
           className="object-cover"
-          style={{ objectPosition: "65% top" }}
+          style={{ objectPosition: "center center" }}
         />
 
-        {/* Gradient : cream opaque à gauche, transparent à droite */}
+        {/* Overlay sombre pour lisibilité */}
         <div
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(to right, #FAFAF8 38%, rgba(250,250,248,0.92) 52%, rgba(250,250,248,0.5) 68%, transparent 85%)",
-          }}
-        />
-        {/* Gradient mobile : bas opaque */}
-        <div
-          className="absolute inset-0 lg:hidden"
-          style={{
-            background:
-              "linear-gradient(to top, #FAFAF8 45%, rgba(250,250,248,0.7) 65%, transparent 85%)",
+              "linear-gradient(to right, rgba(15,15,15,0.82) 45%, rgba(15,15,15,0.55) 70%, rgba(15,15,15,0.3) 100%)",
           }}
         />
 
@@ -132,7 +124,7 @@ export default function HomePage() {
           <div className="max-w-xl">
             <p
               className="text-xs font-semibold uppercase tracking-widest mb-6 animate-fade-up"
-              style={{ color: "#9B7D5E" }}
+              style={{ color: "#C4A882" }}
             >
               Consultante en stratégie digitale &amp; IA
             </p>
@@ -143,7 +135,7 @@ export default function HomePage() {
               style={{
                 fontFamily: "var(--font-playfair), Georgia, serif",
                 fontSize: "clamp(2.8rem, 5.5vw, 5rem)",
-                color: "#1A1A1A",
+                color: "#FFFFFF",
               }}
             >
               Digital et IA
@@ -155,12 +147,12 @@ export default function HomePage() {
 
             <p
               className="text-base leading-relaxed mb-10 animate-fade-up animate-delay-200"
-              style={{ color: "#4A4A4A", maxWidth: "440px" }}
+              style={{ color: "rgba(255,255,255,0.75)", maxWidth: "440px" }}
             >
               J&rsquo;accompagne dirigeants et équipes dans la construction de
               stratégies digitales et e-commerce concrètes, avec une lecture
               business et une approche opérationnelle.{" "}
-              <strong style={{ color: "#1A1A1A", fontWeight: 500 }}>
+              <strong style={{ color: "#FFFFFF", fontWeight: 500 }}>
                 15 ans d&rsquo;expérience en retail et digital
               </strong>
               , de Petit Bateau à Kusmi Tea en passant par Contentsquare.
@@ -179,7 +171,7 @@ export default function HomePage() {
             <div className="mt-16 animate-fade-up animate-delay-400">
               <p
                 className="text-xs uppercase tracking-widest mb-4"
-                style={{ color: "#9B7D5E" }}
+                style={{ color: "#C4A882" }}
               >
                 Expérience construite auprès de
               </p>
@@ -188,7 +180,7 @@ export default function HomePage() {
                   <span
                     key={ref}
                     className="text-sm font-medium"
-                    style={{ color: "#6B6B6B" }}
+                    style={{ color: "rgba(255,255,255,0.6)" }}
                   >
                     {ref}
                   </span>
