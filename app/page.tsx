@@ -551,7 +551,7 @@ export default function HomePage() {
             Échangeons sur votre situation, vos enjeux et la manière dont je
             peux vous aider à créer de la vraie valeur.
           </p>
-          <CTAButton href="/contact" size="lg" variant="primary">
+          <CTAButton href="/contact" size="lg" variant="ghost" className="!text-white !border-white/70 !bg-white/10 hover:!bg-white hover:!text-[#1A1A1A]">
             Demander un accompagnement
           </CTAButton>
         </div>
