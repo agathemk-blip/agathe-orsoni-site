@@ -108,7 +108,7 @@ export default function HomePage() {
           priority
           sizes="100vw"
           className="object-cover"
-          style={{ objectPosition: "65% 30%" }}
+          style={{ objectPosition: "65% top" }}
         />
 
         {/* Overlay sombre pour lisibilité */}
@@ -117,6 +117,13 @@ export default function HomePage() {
           style={{
             background:
               "linear-gradient(to right, rgba(15,15,15,0.82) 45%, rgba(15,15,15,0.55) 70%, rgba(15,15,15,0.3) 100%)",
+          }}
+        />
+        {/* Fondu bas pour masquer le bord de la table */}
+        <div
+          className="absolute inset-0"
+          style={{
+            background: "linear-gradient(to bottom, transparent 60%, #0F0F0F 100%)",
           }}
         />
 
