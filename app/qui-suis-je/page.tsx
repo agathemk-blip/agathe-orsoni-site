@@ -85,7 +85,7 @@ export default function QuiSuisJePage() {
                 style={{ minHeight: "480px", background: "#F4F1EC" }}
               >
                 <Image
-                  src="/agathe-pro.jpg"
+                  src="/agathe-2.jpg"
                   alt="Agathe Orsoni, consultante en stratégie digitale et IA"
                   fill
                   priority

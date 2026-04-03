@@ -97,17 +97,18 @@ export default function HomePage() {
       {/* ── HERO ─────────────────────────────────────────── */}
       <section
         className="relative min-h-screen flex items-center overflow-hidden"
+        style={{ backgroundColor: "#0F0F0F" }}
         aria-labelledby="hero-heading"
       >
         {/* Background image */}
         <Image
-          src="/hero-bg.webp"
+          src="/hero-bg-leo.png"
           alt=""
           fill
           priority
           sizes="100vw"
           className="object-cover"
-          style={{ objectPosition: "center center" }}
+          style={{ objectPosition: "65% 30%" }}
         />
 
         {/* Overlay sombre pour lisibilité */}
@@ -192,14 +193,14 @@ export default function HomePage() {
       {/* ── MANIFESTE ────────────────────────────────────── */}
       <section
         className="section-padding"
-        style={{ background: "#1A1A1A" }}
+        style={{ background: "#F4F1EC" }}
         aria-labelledby="manifeste-heading"
       >
         <div className="container-site">
           <div className="max-w-3xl mx-auto text-center">
             <p
-              className="text-xs font-semibold uppercase tracking-widest mb-8"
-              style={{ color: "#C4A882" }}
+              className="text-xs font-medium uppercase tracking-widest mb-8"
+              style={{ color: "#9B7D5E" }}
             >
               Ma conviction
             </p>
@@ -210,7 +211,7 @@ export default function HomePage() {
                 style={{
                   fontFamily: "var(--font-playfair), Georgia, serif",
                   fontSize: "clamp(1.5rem, 3vw, 2.25rem)",
-                  color: "#FFFFFF",
+                  color: "#1A1A1A",
                 }}
               >
                 &ldquo;La performance digitale atteint son plein potentiel quand
@@ -331,7 +332,7 @@ export default function HomePage() {
                 style={{ aspectRatio: "4/5", background: "#F4F1EC" }}
               >
                 <Image
-                  src="/agathe-pro.jpg"
+                  src="/agathe-2.jpg"
                   alt="Agathe Orsoni"
                   fill
                   sizes="(max-width: 1024px) 80vw, 400px"
