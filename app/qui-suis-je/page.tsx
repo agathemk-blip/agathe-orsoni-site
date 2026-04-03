@@ -62,7 +62,7 @@ const convictions = [
 
 const cibles = [
   "Les TPE / PME qui veulent structurer leur digital.",
-  "Les entrepreneurs qui cherchent à se structurer et montée en compétence sur l'IA.",
+  "Les entrepreneurs qui cherchent à se structurer et monter en compétence sur l'IA.",
   "Les équipes en transformation qui ont besoin d'un regard extérieur exigeant.",
   "Ceux qui veulent faire de l'IA un outil du quotidien, pas un projet pilote.",
 ];

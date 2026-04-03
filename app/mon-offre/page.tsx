@@ -160,7 +160,7 @@ export default function MonOffrePage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-3xl">
             {[
               "Les TPE / PME qui veulent structurer leur digital.",
-              "Les entrepreneurs qui cherchent à se structurer et montée en compétence sur l'IA.",
+              "Les entrepreneurs qui cherchent à se structurer et monter en compétence sur l'IA.",
               "Les équipes en transformation qui ont besoin d'un regard extérieur exigeant.",
               "Ceux qui veulent faire de l'IA un outil du quotidien, pas un projet pilote.",
             ].map((cible, i) => (
