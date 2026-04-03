@@ -123,7 +123,7 @@ export default function HomePage() {
         <div className="relative z-10 container-site w-full pt-32 pb-20 md:pt-40 md:pb-28">
           <div className="max-w-xl">
             <p
-              className="text-xs font-semibold uppercase tracking-widest mb-6 animate-fade-up"
+              className="text-xs font-medium uppercase tracking-widest mb-6 animate-fade-up"
               style={{ color: "#C4A882" }}
             >
               Consultante en stratégie digitale &amp; IA
@@ -160,7 +160,7 @@ export default function HomePage() {
               <CTAButton href="/contact" size="lg" variant="primary">
                 Demander un accompagnement
               </CTAButton>
-              <CTAButton href="/mon-offre" size="lg" variant="ghost" className="!text-white !border-white hover:!bg-white hover:!text-[#1A1A1A]">
+              <CTAButton href="/mon-offre" size="lg" variant="ghost" className="!text-white !border-white/70 !bg-white/10 hover:!bg-white hover:!text-[#1A1A1A]">
                 Découvrir l&rsquo;offre
               </CTAButton>
             </div>
