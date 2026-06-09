@@ -347,7 +347,7 @@ export default function MonOffrePage() {
         aria-labelledby="cas-offre-heading"
       >
         <div className="container-site">
-          <div className="max-w-3xl mx-auto">
+          <div className="max-w-3xl mb-8">
             <p
               className="text-xs font-semibold uppercase tracking-widest mb-4"
               style={{ color: "#9B7D5E" }}
@@ -356,7 +356,7 @@ export default function MonOffrePage() {
             </p>
             <h2
               id="cas-offre-heading"
-              className="font-light leading-tight mb-8"
+              className="font-light leading-tight"
               style={{
                 fontFamily: "var(--font-playfair), Georgia, serif",
                 fontSize: "clamp(1.75rem, 3vw, 2.5rem)",
@@ -365,9 +365,11 @@ export default function MonOffrePage() {
             >
               Ce que ça donne dans la vraie vie.
             </h2>
+          </div>
 
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
             <div
-              className="rounded-2xl p-8 md:p-10"
+              className="rounded-2xl p-8 md:p-10 flex flex-col"
               style={{ background: "#FFFFFF", border: "1px solid #E5E0D8" }}
             >
               <p
@@ -383,7 +385,7 @@ export default function MonOffrePage() {
                 Repenser une offre et créer une mécanique de croissance durable.
               </h3>
               <p
-                className="text-sm leading-relaxed mb-8"
+                className="text-sm leading-relaxed mb-8 flex-1"
                 style={{ color: "#6B6B6B" }}
               >
                 Le projet existait déjà. Le contenu était là. La vision aussi.
@@ -433,6 +435,70 @@ export default function MonOffrePage() {
                 d&rsquo;une logique de production à une logique de système.
                 D&rsquo;un contenu spontané à une stratégie éditoriale. D&rsquo;une
                 présence digitale à un actif business.
+              </p>
+            </div>
+
+            <div
+              className="rounded-2xl p-8 md:p-10 flex flex-col"
+              style={{ background: "#FFFFFF", border: "1px solid #E5E0D8" }}
+            >
+              <p
+                className="text-sm font-semibold uppercase tracking-widest mb-2"
+                style={{ color: "#9B7D5E" }}
+              >
+                Studio de Courcy — 2026
+              </p>
+              <h3
+                className="text-xl font-medium mb-4"
+                style={{ color: "#1A1A1A" }}
+              >
+                Automatiser les tâches répétitives d&rsquo;un studio d&rsquo;architecture grâce à l&rsquo;IA.
+              </h3>
+              <p
+                className="text-sm leading-relaxed mb-8 flex-1"
+                style={{ color: "#6B6B6B" }}
+              >
+                Une architecte avec une activité bien rodée, mais des tâches chronophages qui grignotaient le temps de création. Pas de cartographie des processus, des outils épars, aucun workflow automatisé. L&rsquo;IA était un sujet vague plutôt qu&rsquo;un levier concret. En parallèle, le site ne reflétait plus l&rsquo;identité du studio.
+              </p>
+
+              <div
+                className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8 py-6 border-y"
+                style={{ borderColor: "#E5E0D8" }}
+              >
+                {[
+                  { value: "Audit", label: "des processus métiers" },
+                  { value: "Agents IA", label: "créés et déployés" },
+                  { value: "Workflows", label: "automatisés" },
+                  { value: "Site refait", label: "de la charte à la mise en ligne" },
+                ].map((r) => (
+                  <div key={r.value} className="text-center">
+                    <p
+                      className="text-lg font-semibold mb-1"
+                      style={{
+                        fontFamily: "var(--font-playfair), Georgia, serif",
+                        color: "#1A1A1A",
+                      }}
+                    >
+                      {r.value}
+                    </p>
+                    <p
+                      className="text-xs leading-tight"
+                      style={{ color: "#9B7D5E" }}
+                    >
+                      {r.label}
+                    </p>
+                  </div>
+                ))}
+              </div>
+
+              <p
+                className="text-sm leading-relaxed"
+                style={{ color: "#6B6B6B" }}
+              >
+                <strong style={{ color: "#1A1A1A", fontWeight: 500 }}>
+                  Ce qui a changé :
+                </strong>{" "}
+                d&rsquo;une charge mentale dispersée à des processus structurés. D&rsquo;un site générique à une présence qui reflète vraiment l&rsquo;identité du studio. De l&rsquo;IA comme concept à l&rsquo;IA comme outil du quotidien.
               </p>
             </div>
           </div>
