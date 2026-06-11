@@ -4,7 +4,7 @@ import CTAButton from "@/components/CTAButton";
 export const metadata: Metadata = {
   title: "Cas clients — Agathe Orsoni, Consultante Stratégie Digitale & IA",
   description:
-    "Découvrez un exemple concret d'accompagnement : Le 4 de Bâton, stratégie éditoriale, tunnel de vente et croissance communautaire.",
+    "Découvrez des exemples concrets d'accompagnement : Studio de Courcy (automatisation IA), Le 4 de Bâton (stratégie éditoriale et croissance).",
   openGraph: {
     title: "Cas clients — Agathe Orsoni",
     description:
@@ -45,12 +45,157 @@ export default function CasClientsPage() {
             </h1>
             <p
               className="text-base leading-relaxed"
-              style={{ color: "#6B6B6B", maxWidth: "560px" }}
+              style={{ color: "#6B6B6B" }}
             >
               Pas de promesse en l&rsquo;air. Des résultats concrets, construits
-              avec des clients qui ont choisi de s&rsquo;engager dans une vraie
+              avec des clients qui ont choisi de s&rsquo;engager dans une
               démarche de transformation.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ── CAS CLIENT : STUDIO DE COURCY ────────────────── */}
+      <section
+        className="section-padding"
+        style={{ background: "#FFFFFF" }}
+        aria-labelledby="cas-courcy-heading"
+      >
+        <div className="container-site">
+          <div className="max-w-3xl mx-auto">
+            <p
+              className="text-sm font-semibold uppercase tracking-widest mb-2"
+              style={{ color: "#9B7D5E" }}
+            >
+              Studio de Courcy — 2026
+            </p>
+            <h2
+              id="cas-courcy-heading"
+              className="font-light leading-tight mb-10"
+              style={{
+                fontFamily: "var(--font-playfair), Georgia, serif",
+                fontSize: "clamp(1.75rem, 3vw, 2.5rem)",
+                color: "#1A1A1A",
+              }}
+            >
+              Automatiser les tâches répétitives
+              <br />
+              d&rsquo;un studio d&rsquo;architecture grâce à l&rsquo;IA.
+            </h2>
+
+            {/* Contexte */}
+            <div className="mb-10">
+              <p
+                className="text-xs font-semibold uppercase tracking-widest mb-4"
+                style={{ color: "#9B7D5E" }}
+              >
+                Le contexte
+              </p>
+              <p
+                className="text-base leading-relaxed"
+                style={{ color: "#6B6B6B" }}
+              >
+                Une architecte avec une activité bien rodée, mais des tâches
+                chronophages qui prenaient le temps de création. Pas de
+                cartographie des processus, des outils épars, aucun workflow
+                automatisé. L&rsquo;IA était un sujet vague plutôt qu&rsquo;un
+                levier concret. En parallèle, le site ne reflétait plus
+                l&rsquo;identité du studio.
+              </p>
+            </div>
+
+            {/* Ce qui a été fait */}
+            <div className="mb-10">
+              <p
+                className="text-xs font-semibold uppercase tracking-widest mb-4"
+                style={{ color: "#9B7D5E" }}
+              >
+                Ce qui a été fait
+              </p>
+              <div className="space-y-3">
+                {[
+                  "Audit des processus métiers et identification des tâches chronophages",
+                  "Cartographie des workflows et des outils existants",
+                  "Création d'agents IA sur mesure pour les tâches répétitives",
+                  "Automatisation de workflows clés (Note d'intention, tri des emails, devis, reporting/CR...)",
+                  "Refonte du site web de A à Z : charte, design, mise en ligne",
+                  "Formation aux outils IA intégrés au quotidien",
+                ].map((item) => (
+                  <div key={item} className="flex items-start gap-3">
+                    <span
+                      className="flex-shrink-0 mt-0.5"
+                      style={{ color: "#9B7D5E", fontSize: "1rem" }}
+                    >
+                      →
+                    </span>
+                    <p
+                      className="text-base leading-relaxed"
+                      style={{ color: "#6B6B6B" }}
+                    >
+                      {item}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Résultats */}
+            <div
+              className="rounded-2xl p-8 md:p-10 mb-10"
+              style={{ background: "#FAFAF8", border: "1px solid #E5E0D8" }}
+            >
+              <p
+                className="text-xs font-semibold uppercase tracking-widest mb-6"
+                style={{ color: "#9B7D5E" }}
+              >
+                Les résultats
+              </p>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+                {[
+                  { value: "Audit", label: "des processus métiers" },
+                  { value: "Agents IA", label: "créés et déployés" },
+                  { value: "Workflows", label: "automatisés" },
+                  { value: "Site refait", label: "de la charte à la mise en ligne" },
+                ].map((r) => (
+                  <div key={r.value} className="text-center">
+                    <p
+                      className="text-2xl font-semibold mb-2"
+                      style={{
+                        fontFamily: "var(--font-playfair), Georgia, serif",
+                        color: "#1A1A1A",
+                      }}
+                    >
+                      {r.value}
+                    </p>
+                    <p
+                      className="text-xs leading-tight"
+                      style={{ color: "#9B7D5E" }}
+                    >
+                      {r.label}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Transformation */}
+            <div
+              className="p-6 rounded-xl"
+              style={{ background: "#F4F1EC", border: "1px solid #E5E0D8" }}
+            >
+              <p
+                className="text-sm leading-relaxed"
+                style={{ color: "#6B6B6B" }}
+              >
+                <strong style={{ color: "#1A1A1A", fontWeight: 500 }}>
+                  Ce qui a changé :
+                </strong>{" "}
+                d&rsquo;une charge mentale dispersée à des processus structurés.
+                D&rsquo;un site générique à une présence qui reflète vraiment
+                l&rsquo;identité du studio. De l&rsquo;IA comme concept à
+                l&rsquo;IA comme outil du quotidien.
+              </p>
+            </div>
           </div>
         </div>
       </section>

@@ -37,7 +37,7 @@ export default function MentionsLegalesPage() {
                 1. Éditeur du site
               </h2>
               <div
-                className="text-sm leading-relaxed p-5 rounded-xl space-y-1"
+                className="text-sm leading-relaxed p-5 rounded-xl space-y-1 mb-4"
                 style={{ background: "#F4F1EC" }}
               >
                 <p>
@@ -46,16 +46,11 @@ export default function MentionsLegalesPage() {
                 </p>
                 <p>
                   <strong style={{ color: "#1A1A1A" }}>Activité :</strong>{" "}
-                  Consultante en stratégie digitale et IA — Entreprise
-                  individuelle
+                  Consultante en stratégie digitale et IA, en portage salarial
                 </p>
                 <p>
                   <strong style={{ color: "#1A1A1A" }}>Adresse :</strong>{" "}
-                  [ADRESSE — à compléter]
-                </p>
-                <p>
-                  <strong style={{ color: "#1A1A1A" }}>SIRET :</strong>{" "}
-                  [NUMÉRO SIRET — à compléter]
+                  78 rue Raynouard, 75106 Paris
                 </p>
                 <p>
                   <strong style={{ color: "#1A1A1A" }}>Email :</strong>{" "}
@@ -65,6 +60,34 @@ export default function MentionsLegalesPage() {
                   >
                     agathemk@gmail.com
                   </a>
+                </p>
+              </div>
+              <p className="text-xs mb-3" style={{ color: "#9B7D5E" }}>
+                Structure porteuse
+              </p>
+              <div
+                className="text-sm leading-relaxed p-5 rounded-xl space-y-1"
+                style={{ background: "#F4F1EC" }}
+              >
+                <p>
+                  <strong style={{ color: "#1A1A1A" }}>Raison sociale :</strong>{" "}
+                  Jump Green
+                </p>
+                <p>
+                  <strong style={{ color: "#1A1A1A" }}>Forme juridique :</strong>{" "}
+                  Société coopérative d&rsquo;activité et d&rsquo;emploi (CAE) — SCIC SA à conseil d&rsquo;administration
+                </p>
+                <p>
+                  <strong style={{ color: "#1A1A1A" }}>Siège social :</strong>{" "}
+                  7, Place de l&rsquo;Hôtel de Ville, 93600 Aulnay-sous-Bois
+                </p>
+                <p>
+                  <strong style={{ color: "#1A1A1A" }}>SIREN :</strong>{" "}
+                  977 610 781 (RCS Bobigny)
+                </p>
+                <p>
+                  <strong style={{ color: "#1A1A1A" }}>Représentant légal :</strong>{" "}
+                  Nicolas Fayon
                 </p>
               </div>
             </div>
@@ -82,15 +105,17 @@ export default function MentionsLegalesPage() {
               >
                 <p>
                   <strong style={{ color: "#1A1A1A" }}>Hébergeur :</strong>{" "}
-                  [NOM DE L&apos;HÉBERGEUR — à compléter]
+                  Vercel Inc.
                 </p>
                 <p>
                   <strong style={{ color: "#1A1A1A" }}>Adresse :</strong>{" "}
-                  [ADRESSE DE L&apos;HÉBERGEUR — à compléter]
+                  340 Pine Street, Suite 701, San Francisco, CA 94104, États-Unis
                 </p>
                 <p>
                   <strong style={{ color: "#1A1A1A" }}>Site :</strong>{" "}
-                  [URL DE L&apos;HÉBERGEUR — à compléter]
+                  <a href="https://vercel.com" style={{ color: "#9B7D5E" }}>
+                    https://vercel.com
+                  </a>
                 </p>
               </div>
             </div>
@@ -163,7 +188,7 @@ export default function MentionsLegalesPage() {
             className="mt-10 pt-8 text-xs"
             style={{ borderTop: "1px solid #E5E0D8", color: "#9B7D5E" }}
           >
-            Dernière mise à jour : mars 2025
+            Dernière mise à jour : avril 2026
           </div>
         </div>
       </div>
