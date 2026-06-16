@@ -15,10 +15,14 @@ export default function Footer() {
             >
               Agathe Orsoni
             </p>
-            <p className="text-sm text-[#6B6B6B] leading-relaxed max-w-xs">
-              Consultante en stratégie digitale et IA. J'aide les entreprises à
-              transformer leur présence digitale en levier de croissance réel.
-            </p>
+            <a
+              href="https://www.linkedin.com/in/agathe-orsoni/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-[#6B6B6B] hover:text-[#1A1A1A] transition-colors"
+            >
+              LinkedIn
+            </a>
           </div>
 
           {/* Colonne 2 — Navigation */}

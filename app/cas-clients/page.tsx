@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import CTAButton from "@/components/CTAButton";
 
 export const metadata: Metadata = {
-  title: "Cas clients — Agathe Orsoni, Consultante Stratégie Digitale & IA",
+  title: "Cas clients, Agathe Orsoni, Consultante Stratégie Digitale & IA",
   description:
     "Découvrez des exemples concrets d'accompagnement : Studio de Courcy (automatisation IA), Le 4 de Bâton (stratégie éditoriale et croissance).",
   openGraph: {
-    title: "Cas clients — Agathe Orsoni",
+    title: "Cas clients, Agathe Orsoni",
     description:
       "De la vision aux résultats : comment j'accompagne concrètement mes clients dans leur transformation digitale.",
     url: "https://agatheorsoni.fr/cas-clients",
@@ -18,7 +18,7 @@ export default function CasClientsPage() {
     <>
       {/* ── HERO ─────────────────────────────────────────── */}
       <section
-        className="pt-32 pb-16 md:pt-40 md:pb-20"
+        className="pt-24 pb-10 md:pt-32 md:pb-14"
         style={{ background: "#FAFAF8" }}
         aria-labelledby="cas-heading"
       >
@@ -47,9 +47,8 @@ export default function CasClientsPage() {
               className="text-base leading-relaxed"
               style={{ color: "#6B6B6B" }}
             >
-              Pas de promesse en l&rsquo;air. Des résultats concrets, construits
-              avec des clients qui ont choisi de s&rsquo;engager dans une
-              démarche de transformation.
+              Des résultats concrets, construits avec des clients qui ont choisi
+              de s&rsquo;engager dans une démarche de transformation.
             </p>
           </div>
         </div>
@@ -67,7 +66,7 @@ export default function CasClientsPage() {
               className="text-sm font-semibold uppercase tracking-widest mb-2"
               style={{ color: "#9B7D5E" }}
             >
-              Studio de Courcy — 2026
+              Studio de Courcy, 2026
             </p>
             <h2
               id="cas-courcy-heading"
@@ -212,7 +211,7 @@ export default function CasClientsPage() {
               className="text-sm font-semibold uppercase tracking-widest mb-2"
               style={{ color: "#9B7D5E" }}
             >
-              Le 4 de Bâton — 2025
+              Le 4 de Bâton, 2025
             </p>
             <h2
               id="cas-4baton-heading"

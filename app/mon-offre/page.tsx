@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import CTAButton from "@/components/CTAButton";
 
 export const metadata: Metadata = {
-  title: "Mon offre — Agathe Orsoni, Consultante Stratégie Digitale & IA",
+  title: "Mon offre, Agathe Orsoni, Consultante Stratégie Digitale & IA",
   description:
     "Accompagnement en stratégie digitale et IA pour TPE, PME et entrepreneurs. Méthode en 3 phases : Construire, Déployer, Structurer. Orienté ROI, exécution comprise.",
   openGraph: {
-    title: "Mon offre — Stratégie digitale & IA avec Agathe Orsoni",
+    title: "Mon offre, Stratégie digitale & IA avec Agathe Orsoni",
     description:
-      "Un accompagnement en trois phases pour transformer votre digital en actif business. Stratégie, outils, IA — de la vision aux résultats.",
+      "Un accompagnement en trois phases pour transformer votre digital en actif business. Stratégie, outils, IA : de la vision aux résultats.",
     url: "https://agatheorsoni.fr/mon-offre",
   },
 };
@@ -20,14 +20,15 @@ const phases = [
     subtitle: "La fondation stratégique",
     forWho: "Vous avez un projet, une activité, une vision, mais pas encore de cap digital clair.",
     problem:
-      "Vous investissez du temps et de l'énergie dans le digital sans vraiment savoir où vous allez. Vos actions ne forment pas une stratégie cohérente. L'offre existe, mais elle n'est pas lisible ni activable.",
+      "Vous investissez du temps et de l'énergie dans le digital sans vraiment savoir où vous allez. L'offre existe, mais elle n'est pas lisible ni activable. L'IA pourrait vous faire gagner du temps, mais vous ne savez pas par où commencer.",
     what: [
       "Diagnostic de votre situation digitale actuelle",
+      "Audit IA : identification des opportunités dans votre activité",
       "Définition claire de votre positionnement et de votre offre",
       "Identification des piliers marketing prioritaires",
       "Choix des canaux et des angles de communication",
       "Définition des objectifs SMART et des KPIs",
-      "Livraison d'une roadmap priorisée et actionnables",
+      "Livraison d'une roadmap priorisée et actionnable",
     ],
     benefit:
       "Vous repartez avec une stratégie claire, un cap défini et un plan d'action que vous pouvez exécuter dès le lendemain.",
@@ -45,6 +46,8 @@ const phases = [
       "Mise en place des outils digitaux adaptés à votre activité",
       "Structuration des tunnels et parcours clients",
       "Intégration de l'IA dans vos process quotidiens",
+      "Création d'agents IA personnalisés",
+      "Automatisation des process répétitifs",
       "Création de pages de vente efficaces",
       "Mise en place d'automatisations et de newsletters",
     ],
@@ -62,6 +65,7 @@ const phases = [
     what: [
       "Déploiement des campagnes d'acquisition et de fidélisation",
       "Mise en place d'une stratégie de contenu orientée conversion",
+      "Automatisation de la production de contenus avec l'IA",
       "Activation et pilotage éditorial",
       "Suivi opérationnel, mesure et optimisation continue",
       "Formation de vos équipes à l'IA et aux nouveaux outils",
@@ -75,11 +79,11 @@ const phases = [
 const faq = [
   {
     q: "À qui s'adresse votre accompagnement ?",
-    a: "Principalement aux TPE, PME et entrepreneurs qui veulent transformer leur présence digitale en levier de croissance réel. Je travaille avec des entreprises de toutes tailles, du solo au groupe — dès lors qu'il y a une vraie ambition de transformation.",
+    a: "Aux entrepreneurs, freelances et créateurs qui veulent intégrer l'IA concrètement dans leur activité. Mais aussi aux TPE et PME qui cherchent à structurer leur digital, développer leur e-commerce et accélérer. Du solo au groupe, dès lors qu'il y a une vraie ambition de transformation.",
   },
   {
     q: "Comment se déroule un accompagnement concrètement ?",
-    a: "Chaque mission commence par un diagnostic approfondi de votre situation. Ensuite, je propose une roadmap adaptée à vos enjeux et votre budget. Je reste présente tout au long de l'exécution — pas juste pour les recommandations.",
+    a: "Chaque mission commence par un diagnostic approfondi de votre situation. Ensuite, je propose une roadmap adaptée à vos enjeux et votre budget. Je reste présente tout au long de l'exécution, pas juste pour les recommandations.",
   },
   {
     q: "Quelle est la durée d'un accompagnement ?",
@@ -104,7 +108,7 @@ export default function MonOffrePage() {
     <>
       {/* ── HERO ─────────────────────────────────────────── */}
       <section
-        className="pt-32 pb-16 md:pt-40 md:pb-20"
+        className="pt-24 pb-10 md:pt-32 md:pb-14"
         style={{ background: "#FAFAF8" }}
         aria-labelledby="offre-heading"
       >
@@ -133,9 +137,9 @@ export default function MonOffrePage() {
               className="text-lg leading-relaxed max-w-2xl mb-10"
               style={{ color: "#6B6B6B" }}
             >
-              Je ne livre pas seulement des livrables. Je construis avec vous
-              un système digital pensé pour générer une performance mesurable,
-              en intégrant l&rsquo;IA de façon concrète.
+              Stratégie digitale, intégration de l&rsquo;IA, automatisation,
+              création d&rsquo;agents, formation : je construis avec vous un
+              système qui génère une performance mesurable.
             </p>
             <CTAButton href="/contact" size="lg" variant="primary">
               Demander un accompagnement
@@ -159,10 +163,9 @@ export default function MonOffrePage() {
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-3xl">
             {[
-              "Les TPE / PME qui veulent structurer leur digital.",
-              "Les entrepreneurs qui cherchent à se structurer et monter en compétence sur l'IA.",
-              "Les équipes en transformation qui ont besoin d'un regard extérieur exigeant.",
-              "Ceux qui veulent faire de l'IA un outil du quotidien, pas un projet pilote.",
+              "Les indépendants et entrepreneurs qui veulent se structurer digitalement : site, outils, IA.",
+              "Les entrepreneurs qui veulent automatiser, structurer leur digital et aller plus vite.",
+              "Les TPE et PME en transformation qui ont besoin d'un regard extérieur concret.",
             ].map((cible, i) => (
               <div
                 key={i}
@@ -260,12 +263,6 @@ export default function MonOffrePage() {
                         style={{ color: "#9B7D5E" }}
                       >
                         {phase.subtitle}
-                      </p>
-                      <p
-                        className="text-sm leading-relaxed italic"
-                        style={{ color: "#6B6B6B" }}
-                      >
-                        Pour vous si : {phase.forWho}
                       </p>
                     </div>
                   </div>
@@ -376,7 +373,7 @@ export default function MonOffrePage() {
                 className="text-sm font-semibold uppercase tracking-widest mb-2"
                 style={{ color: "#9B7D5E" }}
               >
-                Le 4 de Bâton — 2025
+                Le 4 de Bâton, 2025
               </p>
               <h3
                 className="text-xl font-medium mb-4"
@@ -446,7 +443,7 @@ export default function MonOffrePage() {
                 className="text-sm font-semibold uppercase tracking-widest mb-2"
                 style={{ color: "#9B7D5E" }}
               >
-                Studio de Courcy — 2026
+                Studio de Courcy, 2026
               </p>
               <h3
                 className="text-xl font-medium mb-4"
@@ -505,60 +502,6 @@ export default function MonOffrePage() {
         </div>
       </section>
 
-      {/* ── FAQ ──────────────────────────────────────────── */}
-      <section
-        className="section-padding"
-        style={{ background: "#FAFAF8" }}
-        aria-labelledby="faq-heading"
-      >
-        <div className="container-site">
-          <div className="max-w-2xl mb-14">
-            <p
-              className="text-xs font-semibold uppercase tracking-widest mb-4"
-              style={{ color: "#9B7D5E" }}
-            >
-              Questions fréquentes
-            </p>
-            <h2
-              id="faq-heading"
-              className="font-light leading-tight"
-              style={{
-                fontFamily: "var(--font-playfair), Georgia, serif",
-                fontSize: "clamp(1.75rem, 3vw, 2.5rem)",
-                color: "#1A1A1A",
-              }}
-            >
-              Ce que vous voulez
-              <br />
-              peut-être savoir.
-            </h2>
-          </div>
-
-          <div className="max-w-3xl space-y-4">
-            {faq.map((item, i) => (
-              <div
-                key={i}
-                className="rounded-xl p-6 md:p-8"
-                style={{ background: "#F4F1EC" }}
-              >
-                <h3
-                  className="text-base font-semibold mb-3"
-                  style={{ color: "#1A1A1A" }}
-                >
-                  {item.q}
-                </h3>
-                <p
-                  className="text-sm leading-relaxed"
-                  style={{ color: "#6B6B6B" }}
-                >
-                  {item.a}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* ── CTA FINAL ────────────────────────────────────── */}
       <section
         className="section-padding"
@@ -566,15 +509,9 @@ export default function MonOffrePage() {
         aria-labelledby="cta-offre-heading"
       >
         <div className="container-site text-center">
-          <p
-            className="text-xs font-semibold uppercase tracking-widest mb-6"
-            style={{ color: "#C4A882" }}
-          >
-            Prêt à avancer ?
-          </p>
           <h2
             id="cta-offre-heading"
-            className="font-light leading-tight mb-6 mx-auto"
+            className="font-light leading-tight mb-10 mx-auto"
             style={{
               fontFamily: "var(--font-playfair), Georgia, serif",
               fontSize: "clamp(1.75rem, 3.5vw, 3rem)",
@@ -582,18 +519,9 @@ export default function MonOffrePage() {
               maxWidth: "640px",
             }}
           >
-            La première étape,
-            <br />
-            c&rsquo;est juste un échange.
+            Décrivez-moi votre projet et vos enjeux.
           </h2>
-          <p
-            className="text-lg mb-10 max-w-xl mx-auto leading-relaxed"
-            style={{ color: "#9B7D5E" }}
-          >
-            Décrivez-moi votre situation. Je vous dirai franchement si je peux
-            vous aider — et comment.
-          </p>
-          <CTAButton href="/contact" size="lg" variant="primary">
+          <CTAButton href="/contact" size="lg" variant="secondary">
             Demander un accompagnement
           </CTAButton>
         </div>

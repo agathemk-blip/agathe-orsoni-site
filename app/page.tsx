@@ -3,13 +3,13 @@ import Image from "next/image";
 import CTAButton from "@/components/CTAButton";
 
 export const metadata: Metadata = {
-  title: "Agathe Orsoni — Consultante en Stratégie Digitale et IA",
+  title: "Agathe Orsoni, Consultante IA et Stratégie Digitale",
   description:
-    "J'accompagne dirigeants et équipes dans la construction de stratégies digitales et e-commerce concrètes, avec une lecture business et une approche opérationnelle. 15 ans d'expérience en retail et digital.",
+    "J'aide entrepreneurs et dirigeants à intégrer concrètement l'IA dans leur activité : automatisation, stratégie digitale, outils du quotidien. 15 ans d'expérience terrain, aujourd'hui focalisée sur ce qui change vraiment les choses.",
   openGraph: {
-    title: "Agathe Orsoni — Consultante en Stratégie Digitale et IA",
+    title: "Agathe Orsoni, Consultante IA et Stratégie Digitale",
     description:
-      "Stratégie digitale et IA au service de la performance business. 15 ans d'expérience en retail et digital.",
+      "IA et stratégie digitale au service de la performance. Accompagnement concret pour entrepreneurs et dirigeants.",
     url: "https://agathe-orsoni.vercel.app",
   },
 };
@@ -31,6 +31,7 @@ const pillars = [
       "Choix des piliers marketing",
       "Angles de communication",
       "Objectifs et indicateurs de performance",
+      "Audit IA : identification des opportunités dans votre activité",
     ],
   },
   {
@@ -42,6 +43,8 @@ const pillars = [
       "Mise en place des outils digitaux",
       "Structuration des tunnels et parcours clients",
       "Intégration de l'IA dans les process",
+      "Création d'agents personnalisés",
+      "Automatisation des process",
     ],
   },
   {
@@ -53,26 +56,27 @@ const pillars = [
       "Activation et production de contenus",
       "Suivi opérationnel et optimisation",
       "Formation des équipes à l'IA",
+      "Automatisation de la production de contenus avec l'IA",
     ],
   },
 ];
 
 const differentiators = [
   {
-    title: "Le ROI comme priorité",
-    desc: "Chaque action est orientée vers un résultat mesurable, connectée aux enjeux business réels.",
+    title: "L'IA comme expertise centrale",
+    desc: "L'IA est intégrée concrètement dans chaque mission : automatisation, outils du quotidien, formation, agents sur mesure.",
   },
   {
-    title: "L'IA comme levier d'efficacité",
-    desc: "Intégrée concrètement dans les stratégies, les process et les équipes, pas mise en avant pour faire bien.",
+    title: "Le ROI comme priorité",
+    desc: "Chaque action est orientée vers un résultat mesurable, connectée aux enjeux business réels.",
   },
   {
     title: "Stratégie et exécution",
     desc: "Au-delà des recommandations, je peux porter les projets ou en assurer le suivi, jusqu'aux livrables concrets et aux premiers résultats.",
   },
   {
-    title: "Écoute et proximité",
-    desc: "Je place l'humain au cœur de chaque projet, avec une attention sincère portée aux enjeux, aux personnes et à la réalité du terrain.",
+    title: "Accessible aux indépendants",
+    desc: "Je travaille avec des créateurs, des freelances, des entrepreneurs et des PME. Mon accompagnement s'adapte à votre réalité.",
   },
 ];
 
@@ -128,7 +132,7 @@ export default function HomePage() {
         />
 
         {/* Contenu */}
-        <div className="relative z-10 container-site w-full pt-32 pb-20 md:pt-40 md:pb-28">
+        <div className="relative z-10 container-site w-full pt-24 pb-14 md:pt-32 md:pb-20">
           <div className="max-w-xl">
             <p
               className="text-xs font-medium uppercase tracking-widest mb-6 animate-fade-up"
@@ -157,11 +161,11 @@ export default function HomePage() {
               className="text-base leading-relaxed mb-10 animate-fade-up animate-delay-200"
               style={{ color: "rgba(255,255,255,0.75)", maxWidth: "440px" }}
             >
-              J&rsquo;accompagne dirigeants et équipes dans la construction de
-              stratégies digitales et e-commerce concrètes, avec une lecture
-              business et une approche opérationnelle. 15 ans
+              J&rsquo;accompagne entrepreneurs et dirigeants dans la
+              construction de leur stratégie digitale et l&rsquo;intégration
+              concrète de l&rsquo;IA dans leur activité. 15 ans
               d&rsquo;expérience en retail et digital, de Petit Bateau à Kusmi
-              Tea en passant par Contentsquare.
+              Tea.
             </p>
 
             <div className="flex flex-col sm:flex-row items-start gap-4 animate-fade-up animate-delay-300">
@@ -197,41 +201,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── MANIFESTE ────────────────────────────────────── */}
-      <section
-        className="section-padding"
-        style={{ background: "#F4F1EC" }}
-        aria-labelledby="manifeste-heading"
-      >
-        <div className="container-site">
-          <div className="max-w-3xl mx-auto text-center">
-            <p
-              className="text-xs font-medium uppercase tracking-widest mb-8"
-              style={{ color: "#9B7D5E" }}
-            >
-              Ma conviction
-            </p>
-            <blockquote>
-              <p
-                className="font-light leading-snug"
-                id="manifeste-heading"
-                style={{
-                  fontFamily: "var(--font-playfair), Georgia, serif",
-                  fontSize: "clamp(1.5rem, 3vw, 2.25rem)",
-                  color: "#1A1A1A",
-                }}
-              >
-                &ldquo;La performance digitale atteint son plein potentiel quand
-                stratégie, opérationnel et IA avancent vraiment ensemble.&rdquo;
-              </p>
-            </blockquote>
-            <p className="mt-6 text-sm" style={{ color: "#9B7D5E" }}>
-              Agathe Orsoni
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* ── OFFRE EN 3 PILIERS ───────────────────────────── */}
       <section
         className="section-padding"
@@ -255,14 +224,10 @@ export default function HomePage() {
                 color: "#1A1A1A",
               }}
             >
-              Une méthode en trois temps,
-              <br />
-              orientée résultats.
+              Une méthode en trois temps.
             </h2>
             <p className="text-lg leading-relaxed" style={{ color: "#6B6B6B" }}>
-              Pas de stratégie sans exécution. Pas d&rsquo;exécution sans
-              mesure. Je travaille de la vision jusqu&rsquo;aux livrables
-              concrets.
+              Un accompagnement sur mesure, de la vision aux livrables concrets, en fonction de vos besoins.
             </p>
           </div>
 
@@ -328,7 +293,7 @@ export default function HomePage() {
       {/* ── À PROPOS MINI ────────────────────────────────── */}
       <section
         className="section-padding"
-        style={{ background: "#FAFAF8" }}
+        style={{ background: "#F4F1EC" }}
         aria-labelledby="about-heading"
       >
         <div className="container-site">
@@ -363,9 +328,11 @@ export default function HomePage() {
                   color: "#1A1A1A",
                 }}
               >
-                15 ans d&rsquo;expérience
+                IA, digital, stratégie :
                 <br />
-                au service de votre performance.
+                une expérience terrain au service
+                <br />
+                de votre performance.
               </h2>
               <p
                 className="text-base leading-relaxed mb-5"
@@ -376,19 +343,18 @@ export default function HomePage() {
                 <strong style={{ color: "#1A1A1A", fontWeight: 500 }}>
                   Kusmi Tea, Petit Bateau et Contentsquare
                 </strong>
-                , j&rsquo;ai choisi de travailler autrement : en prenant le
-                temps de comprendre vraiment chaque contexte, chaque équipe,
-                chaque enjeu. Pas de solution standard. Chaque collaboration est
-                construite sur mesure, à partir de ce qui compte réellement pour
-                l&rsquo;entreprise.
+                , j&rsquo;ai développé une expertise à l&rsquo;intersection
+                de la stratégie digitale, de l&rsquo;e-commerce et de
+                l&rsquo;IA.
               </p>
               <p
                 className="text-base leading-relaxed mb-8"
                 style={{ color: "#6B6B6B" }}
               >
-                Mon engagement : une approche qui articule stratégie,
-                opérationnel et IA, avec une dimension humaine au cœur de chaque
-                collaboration.
+                Aujourd&rsquo;hui j&rsquo;accompagne entrepreneurs et dirigeants
+                pour structurer leur présence digitale, piloter leur performance
+                e-commerce et intégrer l&rsquo;IA concrètement dans leur
+                activité.
               </p>
               <CTAButton href="/qui-suis-je" size="md" variant="ghost">
                 Découvrir mon parcours
@@ -401,7 +367,7 @@ export default function HomePage() {
       {/* ── RÉASSURANCE ──────────────────────────────────── */}
       <section
         className="section-padding"
-        style={{ background: "#F4F1EC" }}
+        style={{ background: "#FAFAF8" }}
         aria-labelledby="reassurance-heading"
       >
         <div className="container-site">
@@ -447,7 +413,7 @@ export default function HomePage() {
       {/* ── AVIS CLIENTS ─────────────────────────────────── */}
       <section
         className="section-padding"
-        style={{ background: "#FAFAF8" }}
+        style={{ background: "#F4F1EC" }}
         aria-labelledby="avis-heading"
       >
         <div className="container-site">
@@ -531,25 +497,11 @@ export default function HomePage() {
           >
             Passons à l&rsquo;action
           </p>
-          <h2
-            id="cta-final-heading"
-            className="font-light leading-tight mb-6 mx-auto"
-            style={{
-              fontFamily: "var(--font-playfair), Georgia, serif",
-              fontSize: "clamp(1.75rem, 3.5vw, 3rem)",
-              color: "#FFFFFF",
-              maxWidth: "680px",
-            }}
-          >
-            Votre stratégie digitale mérite mieux qu&rsquo;un audit de 50 pages
-            qu&rsquo;on ne lit pas.
-          </h2>
           <p
             className="text-lg mb-10 max-w-xl mx-auto leading-relaxed"
-            style={{ color: "#9B7D5E" }}
+            style={{ color: "rgba(255,255,255,0.75)" }}
           >
-            Échangeons sur votre situation, vos enjeux et la manière dont je
-            peux vous aider à créer de la vraie valeur.
+            Décrivez-moi votre projet et vos enjeux.
           </p>
           <CTAButton href="/contact" size="lg" variant="ghost" className="!text-white !border-white/70 !bg-white/10 hover:!bg-white hover:!text-[#1A1A1A]">
             Demander un accompagnement

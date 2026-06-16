@@ -3,13 +3,13 @@ import Image from "next/image";
 import CTAButton from "@/components/CTAButton";
 
 export const metadata: Metadata = {
-  title: "Qui suis-je — Agathe Orsoni",
+  title: "Qui suis-je, Agathe Orsoni, Consultante IA & Stratégie Digitale",
   description:
-    "15 ans d'expérience en marketing, e-commerce et transformation digitale. Passée par Kusmi Tea, Petit Bateau, Contentsquare et BETC Digital, j'accompagne aujourd'hui les entreprises dans leur stratégie digitale et l'intégration de l'IA.",
+    "Consultante IA, stratégie digitale et e-commerce. Après 15 ans en marketing digital grands comptes, j'accompagne entrepreneurs et dirigeants dans leur transformation digitale et l'intégration concrète de l'IA.",
   openGraph: {
-    title: "Qui suis-je — Agathe Orsoni, Consultante Stratégie Digitale & IA",
+    title: "Qui suis-je, Agathe Orsoni, Consultante IA & Stratégie Digitale",
     description:
-      "15 ans d'expérience grands comptes → consultante indépendante. Mon parcours, mes convictions, ma manière de travailler.",
+      "15 ans d'expérience grands comptes, aujourd'hui 100% focalisée sur l'IA et la transformation digitale concrète.",
     url: "https://agathe-orsoni.vercel.app/qui-suis-je",
   },
 };
@@ -48,7 +48,7 @@ const convictions = [
   },
   {
     title: "L'IA comme levier d'efficacité.",
-    desc: "Je l'intègre de manière concrète dans les stratégies, les process et les équipes, avec une seule exigence : qu'elle fasse gagner en pertinence, en temps et en impact.",
+    desc: "Je l'intègre concrètement dans les stratégies, les process et les outils du quotidien : automatisation, création d'agents personnalisés, production de contenus assistée par l'IA, formation des équipes. L'objectif est toujours le même : gagner en temps, en pertinence et en impact.",
   },
   {
     title: "Stratégie et exécution.",
@@ -61,10 +61,9 @@ const convictions = [
 ];
 
 const cibles = [
-  "Les TPE / PME qui veulent structurer leur digital.",
-  "Les entrepreneurs qui cherchent à se structurer et monter en compétence sur l'IA.",
-  "Les équipes en transformation qui ont besoin d'un regard extérieur exigeant.",
-  "Ceux qui veulent faire de l'IA un outil du quotidien, pas un projet pilote.",
+  "Les indépendants et entrepreneurs qui veulent se structurer digitalement : site, outils, IA.",
+  "Les entrepreneurs qui cherchent à automatiser, structurer leur digital et aller plus vite.",
+  "Les TPE et PME en transformation qui ont besoin d'un regard extérieur concret.",
 ];
 
 export default function QuiSuisJePage() {
@@ -72,7 +71,7 @@ export default function QuiSuisJePage() {
     <>
       {/* ── HERO ─────────────────────────────────────────── */}
       <section
-        className="pt-32 pb-16 md:pt-40 md:pb-20"
+        className="pt-24 pb-10 md:pt-32 md:pb-14"
         style={{ background: "#FAFAF8" }}
         aria-labelledby="quisuisje-heading"
       >
@@ -112,11 +111,7 @@ export default function QuiSuisJePage() {
                   color: "#1A1A1A",
                 }}
               >
-                Allier stratégie, action
-                <br />
-                et humain pour vous accompagner
-                <br />
-                au plus près de vos enjeux.
+                Stratégie digitale, e-commerce et IA.
               </h1>
 
               <div className="space-y-5 mb-10">
@@ -126,29 +121,26 @@ export default function QuiSuisJePage() {
                 >
                   Avec plus de 15 ans d&rsquo;expérience en marketing,
                   e-commerce et transformation digitale auprès de marques comme
-                  Kusmi Tea, Petit Bateau et Contentsquare ou BETC Digital,
-                  j&rsquo;ai construit une expertise à l&rsquo;intersection de
-                  la stratégie, de l&rsquo;opérationnel et de la performance.
+                  Kusmi Tea, Petit Bateau, Contentsquare ou BETC Digital,
+                  j&rsquo;ai construit une expertise solide à l&rsquo;intersection
+                  de la stratégie, de l&rsquo;opérationnel et de la performance.
                 </p>
                 <p
                   className="text-base leading-relaxed"
                   style={{ color: "#6B6B6B" }}
                 >
-                  Mon parcours m&rsquo;a permis d&rsquo;affiner une conviction
-                  essentielle : les transformations les plus solides sont celles
-                  qui placent l&rsquo;humain au cœur de l&rsquo;action.
-                  C&rsquo;est cette vision, à la fois exigeante et profondément
-                  concrète, qui guide aujourd&rsquo;hui ma manière
-                  d&rsquo;accompagner les entreprises.
+                  Puis j&rsquo;ai fait un virage délibéré vers l&rsquo;IA : le levier
+                  le plus puissant disponible aujourd&rsquo;hui pour gagner du temps,
+                  structurer son activité et créer de la valeur différemment.
                 </p>
                 <p
                   className="text-base leading-relaxed"
                   style={{ color: "#6B6B6B" }}
                 >
-                  J&rsquo;ai choisi de travailler de manière indépendante pour
-                  mettre mon expérience au service de projets portés par
-                  l&rsquo;écoute, le respect, la clarté et la recherche
-                  d&rsquo;un impact tangible.
+                  J&rsquo;accompagne aujourd&rsquo;hui des entrepreneurs
+                  et dirigeants dans la construction de leur stratégie digitale,
+                  le développement de leur e-commerce et l&rsquo;intégration
+                  concrète de l&rsquo;IA.
                 </p>
               </div>
 
@@ -323,8 +315,7 @@ export default function QuiSuisJePage() {
               À qui je m&rsquo;adresse
             </p>
             <p className="text-base leading-relaxed" style={{ color: "#6B6B6B" }}>
-              Stratégie, opérationnel et IA avancent ensemble. Parce que
-              j&rsquo;ai l&rsquo;expérience des trois, je ne cloisonne jamais.
+              Je travaille avec des entreprises de toutes tailles et m&rsquo;adapte à vos besoins.
             </p>
           </div>
 
@@ -372,7 +363,7 @@ export default function QuiSuisJePage() {
             </p>
             <h2
               id="cta-quisuisje-heading"
-              className="font-light leading-tight mb-6 mx-auto"
+              className="font-light leading-tight mb-8 mx-auto"
               style={{
                 fontFamily: "var(--font-playfair), Georgia, serif",
                 fontSize: "clamp(1.5rem, 3vw, 2.25rem)",
@@ -380,16 +371,8 @@ export default function QuiSuisJePage() {
                 maxWidth: "560px",
               }}
             >
-              Si vous cherchez une consultante qui s&rsquo;engage vraiment,
-              nous avons peut-être quelque chose à construire ensemble.
+              Décrivez-moi votre projet et vos enjeux.
             </h2>
-            <p
-              className="text-base leading-relaxed mb-8 mx-auto"
-              style={{ color: "#6B6B6B", maxWidth: "480px" }}
-            >
-              Décrivez-moi votre projet, vos enjeux et ce que vous attendez
-              d&rsquo;un accompagnement. Je vous répondrai avec clarté.
-            </p>
             <CTAButton href="/contact" size="lg" variant="primary">
               Demander un accompagnement
             </CTAButton>

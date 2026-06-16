@@ -18,8 +18,8 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | Agathe Orsoni — Consultante Stratégie Digitale & IA",
-    default: "Agathe Orsoni — Consultante en Stratégie Digitale et IA",
+    template: "%s | Agathe Orsoni, Consultante Stratégie Digitale & IA",
+    default: "Agathe Orsoni, Consultante en Stratégie Digitale et IA",
   },
   description:
     "Agathe Orsoni, consultante en stratégie digitale et IA. J'aide les entreprises à construire des stratégies digitales orientées ROI et à intégrer l'IA comme levier de performance durable.",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
         url: "/agathe-pro.jpg",
         width: 1200,
         height: 630,
-        alt: "Agathe Orsoni — Consultante en Stratégie Digitale et IA",
+        alt: "Agathe Orsoni, Consultante en Stratégie Digitale et IA",
       },
     ],
   },
